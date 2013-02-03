@@ -1,0 +1,6 @@
+; Ventas.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "Ventasd"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

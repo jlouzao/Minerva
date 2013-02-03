@@ -1,0 +1,1 @@
+copy /a GestionCuentasMng.h    GestionCuentas.h

@@ -1,0 +1,1 @@
+copy /a VentasMngr.h   Ventas.h

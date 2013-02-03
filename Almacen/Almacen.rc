@@ -1,0 +1,306 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Almacen.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Almacen.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Almacen.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_REGULARIZACIONES DIALOGEX 0, 0, 447, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Introducción de regularizaciones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Fecha:",IDC_STATIC_FECHA,22,17,25,11
+    CONTROL         "",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,77,17,72,13,WS_EX_RIGHT
+    LTEXT           "Almacén:",IDC_STATIC_ALMACEN,22,35,33,14
+    EDITTEXT        IDC_EDIT_ALMACEN,77,35,72,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,151,35,13,13
+    EDITTEXT        IDC_EDIT_DESALMACEN,168,35,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Documento:",IDC_STATIC_DOCU,22,53,47,11
+    EDITTEXT        IDC_EDIT_DOCUMENTO,77,53,72,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_DOCUMENTO,151,53,13,13
+    EDITTEXT        IDC_EDIT_DESDOC,168,53,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC_OBSERV,22,71,52,15
+    EDITTEXT        IDC_EDIT_OBSERVACIONES,77,71,247,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LSTARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,22,96,402,81,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Buscar",IDBUSCAR,173,189,50,14
+    PUSHBUTTON      "Eliminar",IDC_BTN_ELIMINAR,240,189,50,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,307,189,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,374,189,50,14
+END
+
+IDD_DLG_TRANFERENCIAS DIALOGEX 0, 0, 405, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Transferencias almacenes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Fecha:",IDC_STATIC_FECHA,22,17,25,11
+    CONTROL         "",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,77,17,72,13,WS_EX_RIGHT
+    LTEXT           "De almacén:",IDC_STATIC_ALMACEN,22,35,43,14
+    EDITTEXT        IDC_EDIT_ALMACEN,77,35,72,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,151,35,13,13
+    EDITTEXT        IDC_EDIT_DESALMACEN,168,35,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "A almacén:",IDC_STATIC_ALMACEN2,21,53,42,14
+    EDITTEXT        IDC_EDIT_ALMACEN2,77,53,72,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN2,151,53,13,13
+    EDITTEXT        IDC_EDIT_DESALMACEN2,167,53,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Documento:",IDC_STATIC_DOCU,22,70,47,11
+    EDITTEXT        IDC_EDIT_DOCUMENTO,77,70,72,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_DOCUMENTO,151,70,13,13
+    EDITTEXT        IDC_EDIT_DESDOC,168,70,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC_OBSERV,22,87,52,15
+    EDITTEXT        IDC_EDIT_OBSERVACIONES,77,87,247,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LSTARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,22,113,363,81,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Buscar",IDBUSCAR,134,205,50,14
+    PUSHBUTTON      "Eliminar",IDC_BTN_ELIMINAR,201,205,50,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,268,205,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,335,205,50,14
+END
+
+IDD_DLG_EXISTENCIAS DIALOGEX 0, 0, 288, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Existencias por artículo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,94,56,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,147,56,50,14
+    LTEXT           "Artículo:",IDC_STATIC,22,18,34,12
+    LTEXT           "Fecha:",IDC_STATIC,22,36,31,11
+    EDITTEXT        IDC_EDIT_CODARTICULO,61,16,69,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ARTICULO,131,16,13,13
+    EDITTEXT        IDC_EDIT_DESARTICULO,145,16,131,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,61,34,56,13
+END
+
+IDD_DLG_EXITS_ARTICULOS DIALOGEX 0, 0, 321, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Existencias"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Salir",IDCANCEL,132,173,57,14
+    CONTROL         "",IDC_LIST_EXISTENCIAS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,19,52,281,93
+    LTEXT           "Código:",IDC_STATIC,19,18,29,10
+    LTEXT           "Descripción:",IDC_STATIC,121,18,39,11
+    LTEXT           "Fecha:",IDC_STATIC,19,34,25,9
+    EDITTEXT        IDC_EDIT1,47,16,69,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,163,16,137,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,47,33,69,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Totales:",IDC_STATIC,75,148,43,9
+    EDITTEXT        IDC_EDIT4,132,148,57,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT5,227,148,57,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_REGULARIZACIONES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DLG_TRANFERENCIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_DLG_EXISTENCIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DLG_EXITS_ARTICULOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_ERROR_BD            "Error de Base de Datos"
+    IDS_ARTI_NO_EXISTS      "El código de artículo no existe"
+    IDS_ARTI_YA_EN_LISTA    "El artículo ya está en la lista"
+    IDS_NO_ALMACEN          "Debe seleccionar un almacén"
+    IDS_SOLO_NUMERO         "Debe introducir un número"
+    IDS_ALMACEN_NO_EXISTS   "La cuenta de almacén no existe"
+    IDS_DOC_NO_EXISTS       "El código de documento no existe"
+    IDS_ALMACEN_NO_VALIDO   "El código de cuenta no es de almacén"
+    IDS_OBSER_LARGO         "El campo Observaciones no puede sobrepasar los 35 caracteres"
+    IDS_NO_REGULARIZACION   "El articulo ""%s"" no ha sido actualizado al no estar bien regularizado"
+    IDS_MISMO_ALMACEN       "El almacén de origen y destino no pueden ser el mismo"
+    IDS_NO_ALMACEN_ORIG     "Debe seleccionar un almacén origen"
+    IDS_NO_ALMACEN_DEST     "Debe seleccionar un almacén destino"
+    IDS_NO_REGULARIZACION2  "No hay unidades disponibles para realizar la operación"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_TRANSFERENCIA    "No hay unidades disponibles para realizar la operación"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Almacen.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

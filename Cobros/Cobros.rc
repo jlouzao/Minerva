@@ -1,0 +1,357 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Cobros.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Cobros.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Cobros.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_GESTION_COBROS DIALOGEX 0, 0, 289, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gestión cobros"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nº Factura:",IDC_STATIC,14,13,43,11
+    EDITTEXT        IDC_EDIT_NUMFAC,85,13,58,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",ID_BUSCAR,144,13,14,13
+    LTEXT           "Estado:",IDC_STATIC,164,15,40,11
+    EDITTEXT        IDC_ESTADO,195,13,78,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nº Efectivo:",IDC_STATIC,14,29,43,11
+    EDITTEXT        IDC_EDIT_NUMEFEC,85,29,58,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "/",IDC_STATIC,146,31,8,9
+    EDITTEXT        IDC_EDIT_NUMEFEC2,150,29,13,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "/",IDC_STATIC,167,31,8,9
+    EDITTEXT        IDC_EDIT_NUMEFEC3,173,29,13,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",ID_BTN_NUMEFEC,188,29,14,13
+    LTEXT           "Cliente:",IDC_STATIC,14,44,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,85,44,58,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,144,44,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,159,44,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Forma de pago:",IDC_STATIC,14,60,59,9
+    EDITTEXT        IDC_EDIT_FCOBRO,85,60,20,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_FCOBRO,106,60,14,13
+    EDITTEXT        IDC_EDIT_DESFCOBRO,121,60,152,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Importe:",IDC_STATIC,14,77,40,11
+    EDITTEXT        IDC_IMPORTE,85,77,56,13,ES_AUTOHSCROLL
+    LTEXT           "Fecha libramiento:",IDC_STATIC,14,93,60,10
+    CONTROL         "",IDC_FECHA_LIBRA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,85,93,56,13
+    LTEXT           "Fecha vencimiento:",IDC_STATIC,14,108,66,10
+    CONTROL         "",IDC_FECHA_VENCI,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,85,109,56,13
+    LTEXT           "Fecha de recepción:",IDC_STATIC,14,124,67,10
+    CONTROL         "",IDC_FECHA_RECEP,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,86,125,56,13
+    LTEXT           "Remesa:",IDC_STATIC,14,140,40,11
+    EDITTEXT        IDC_REMESA,86,140,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Cta. tesorería:",IDC_STATIC,14,156,58,11
+    EDITTEXT        IDC_CTA_TESORERIA,86,156,56,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Centro:",IDC_STATIC,14,172,29,8
+    EDITTEXT        IDC_EDIT_CENTRO,86,172,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTRO,111,172,14,13
+    EDITTEXT        IDC_EDIT_NOMBRECENTRO,127,172,146,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC,14,188,58,11
+    EDITTEXT        IDC_OBSERVACIONES,86,188,188,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Guardar",IDOK,170,213,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,224,213,50,14
+    DEFPUSHBUTTON   "Limpiar",ID_LIMPIAR,115,213,50,14
+    DEFPUSHBUTTON   "Desglosar",ID_DESGLOSAR,61,213,50,14
+END
+
+IDD_DLG_DESGLOSE DIALOGEX 0, 0, 290, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Desglose de cobros"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,101,113,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,155,113,50,14
+    LTEXT           "Nº Efectivo:",IDC_STATIC,14,10,43,11
+    EDITTEXT        IDC_EDIT_NUMEFEC,85,10,58,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "/",IDC_STATIC,146,12,8,9
+    EDITTEXT        IDC_EDIT_NUMEFEC2,150,10,13,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "/",IDC_STATIC,167,12,8,9
+    EDITTEXT        IDC_EDIT_NUMEFEC3,173,10,13,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Forma de pago:",IDC_STATIC,14,26,59,9
+    EDITTEXT        IDC_EDIT_FCOBRO,85,26,20,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_FCOBRO,106,26,14,13
+    EDITTEXT        IDC_EDIT_DESFCOBRO,121,26,152,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Importe:",IDC_STATIC,14,42,40,11
+    EDITTEXT        IDC_IMPORTE,85,42,56,13,ES_AUTOHSCROLL
+    LTEXT           "Fecha vencimiento:",IDC_STATIC,14,58,66,10
+    CONTROL         "",IDC_FECHA_VENCI,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,85,58,56,13
+    LTEXT           "Observaciones:",IDC_STATIC,14,89,58,11
+    EDITTEXT        IDC_OBSERVACIONES,85,89,188,13,ES_AUTOHSCROLL
+    LTEXT           "Fecha de recepción:",IDC_STATIC,14,73,67,10
+    CONTROL         "",IDC_FECHA_RECEP,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,86,73,56,13
+END
+
+IDD_DLG_INTRO_COBRO DIALOGEX 0, 0, 321, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Introducción de cobros:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,111,225,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,163,225,50,14
+    LTEXT           "Cliente:",IDC_STATIC,17,51,29,11
+    EDITTEXT        IDC_EDIT_CLIENTE,80,49,54,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CLIENTE,135,49,14,13
+    EDITTEXT        IDC_EDIT_DESCLIENTE,150,49,155,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Forma de pago:",IDC_STATIC,17,68,59,9
+    EDITTEXT        IDC_EDIT_FCOBRO,79,66,20,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_FCOBRO,101,66,14,13
+    EDITTEXT        IDC_EDIT_DESFCOBRO,116,66,189,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC,7,40,307,178
+    GROUPBOX        "",IDC_STATIC,7,3,307,31
+    LTEXT           "Cuenta tesorería:",IDC_STATIC,17,15,59,11
+    EDITTEXT        IDC_EDIT_CTA_TESORERIA,80,13,54,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CTATESORERIA,135,13,14,13
+    EDITTEXT        IDC_EDIT_DESCTATESORERIA,150,13,156,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_COBROS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,16,86,289,105
+    PUSHBUTTON      "Buscar",ID_BUSCAR,16,197,50,14
+    LTEXT           "Total cobrado:",IDC_STATIC,190,199,49,8
+    EDITTEXT        IDC_IMPORTE,240,197,65,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DLG_INFORMES_COBRO DIALOGEX 0, 0, 295, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Informes cobro"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,96,106,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,148,106,50,14
+    LTEXT           "Fecha inicial:",IDC_STATIC,13,16,43,11
+    LTEXT           "Fecha final:",IDC_STATIC,147,16,39,11
+    CONTROL         "",IDC_FECHA1,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,65,14,54,13
+    CONTROL         "",IDC_FECHA2,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,199,15,54,13
+    LTEXT           "Factura inicial:",IDC_STATIC_ELEM1,13,35,46,9
+    LTEXT           "Factura final:",IDC_STATIC_ELEM2,147,35,43,10
+    LTEXT           "Cuenta inicial:",IDC_STATIC,13,53,47,10
+    LTEXT           "Cuenta final:",IDC_STATIC,147,53,43,12
+    LTEXT           "Centro inicial:",IDC_STATIC,13,71,50,10
+    LTEXT           "Centro final:",IDC_STATIC,147,71,42,9
+    EDITTEXT        IDC_ELEM1,65,33,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ELEM1,125,33,14,12
+    EDITTEXT        IDC_ELEM2,199,33,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ELEM2,259,33,14,12
+    EDITTEXT        IDC_CUENTA1,65,51,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTAS1,125,51,14,12
+    EDITTEXT        IDC_CUENTA2,199,51,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTAS2,259,51,14,12
+    EDITTEXT        IDC_CENTRO1,65,69,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTROS1,125,69,14,12
+    EDITTEXT        IDC_CENTRO2,199,69,58,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTROS2,259,69,14,12
+    LTEXT           "Estado inicial:",IDC_STATIC,13,87,50,10
+    LTEXT           "Estado final:",IDC_STATIC,147,87,42,9
+    EDITTEXT        IDC_ESTADO1,65,86,11,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ESTADO1,77,86,14,12
+    EDITTEXT        IDC_ESTADO2,199,86,11,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ESTADO2,211,86,14,12
+    EDITTEXT        IDC_DESESTADO1,92,86,47,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESESTADO2,226,86,47,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_GESTION_COBROS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DLG_DESGLOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DLG_INTRO_COBRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DLG_INFORMES_COBRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_FACTURA_NO_EXISTS   "La factura no existe"
+    IDC_COBRO_NO_EXISTS     "El cobro no existe"
+    IDC_ERROR_BD            "Error de Base de Datos"
+    IDC_CLIENTE_NO_EXISTS   "El cliente no existe"
+    IDC_CENTRO_NO_EXISTS    "El centro no existe"
+    IDC_FCOBRO_NO_EXISTS    "La forma de cobro no existe"
+    IDC_NO_NUMBER           "Debe escribir un número"
+    IDC_CUENTA_NO_EXISTS    "La cuenta no existe"
+    IDC_ESTADO_NO_EXISTS    "El estado no existe"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Cobros.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

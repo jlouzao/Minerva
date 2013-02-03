@@ -1,0 +1,6 @@
+; GestionCuentas.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "GestionCuentas"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

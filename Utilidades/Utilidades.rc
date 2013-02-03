@@ -1,0 +1,483 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Utilidades.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Utilidades.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Utilidades.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+50001 DIALOGEX 0, 0, 236, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Búsqueda"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,137,151,44,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,185,151,44,14
+    CONTROL         "",IDC_LIST_BUSQUEDA,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,222,133
+    PUSHBUTTON      "Modificar",IDMODIFICAR,88,151,44,14
+    PUSHBUTTON      "Agregar",IDAGREGAR,39,151,44,14
+END
+
+IDD_DLG_DIRECCION_ENVIO DIALOGEX 0, 0, 343, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Obras"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "...",IDC_BUSCAR,70,7,15,12
+    EDITTEXT        IDC_NOMBRE,62,31,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIRECCION,62,45,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CP,62,59,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_POBLACION,62,73,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROVINCIA,62,87,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCIA,62,101,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONTACTO,250,34,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TELEFONO,250,47,75,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_FECHALTA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,249,81,75,12
+    CONTROL         "",IDC_FECHBAJA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,249,96,75,12
+    DEFPUSHBUTTON   "Limpiar",IDC_LIMPIAR,188,127,44,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,236,127,44,14
+    PUSHBUTTON      "Salir",IDCANCEL,284,127,44,14
+    PUSHBUTTON      "|<",IDC_INI,10,127,20,14
+    PUSHBUTTON      "<",IDC_ANT,32,127,20,14
+    PUSHBUTTON      ">",IDC_SIG,54,127,20,14
+    PUSHBUTTON      ">|",IDC_FIN,76,127,20,14
+    EDITTEXT        IDC_OBRA,35,7,31,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CLIENTE,141,7,51,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cliente:",IDC_STATIC,101,8,37,12
+    LTEXT           "Obra:",IDC_STATIC,6,8,26,10
+    LTEXT           "Nombre:",IDC_STATIC,12,31,37,12
+    LTEXT           "Dirección:",IDC_STATIC,12,45,37,12
+    LTEXT           "CP:",IDC_STATIC,12,59,37,12
+    LTEXT           "Población:",IDC_STATIC,12,73,37,12
+    LTEXT           "Provincia:",IDC_STATIC,12,87,37,12
+    LTEXT           "Contacto:",IDC_STATIC,206,34,37,12
+    LTEXT           "Teléfono:",IDC_STATIC,206,48,37,12
+    LTEXT           "Distancia:",IDC_STATIC,12,102,37,11
+    LTEXT           "Fecha Alta:",IDC_STATIC,205,81,37,12
+    LTEXT           "Fecha Baja:",IDC_STATIC,205,97,41,12
+    GROUPBOX        "",IDC_STATIC,6,22,186,96
+    GROUPBOX        "",IDC_STATIC,197,22,140,44
+    GROUPBOX        "",IDC_STATIC,197,67,140,51
+    EDITTEXT        IDC_DES_CLIENTE,197,7,140,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Km.",IDC_STATIC,97,103,15,8
+    GROUPBOX        "",IDC_STATIC,179,119,158,25
+    GROUPBOX        "",IDC_STATIC,6,119,94,26
+END
+
+50004 DIALOGEX 0, 0, 261, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Paises"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,54,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,54,44,14
+    DEFPUSHBUTTON   "Limpiar",IDLIMPIAR,109,54,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    GROUPBOX        "",IDC_STATIC,3,45,94,26
+    PUSHBUTTON      "|<",IDC_INI,7,53,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,53,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,53,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,53,20,14
+END
+
+50003 DIALOGEX 0, 0, 261, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Idiomas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,54,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,54,44,14
+    DEFPUSHBUTTON   "Limpiar",IDLIMPIAR,109,54,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    GROUPBOX        "",IDC_STATIC,3,45,94,26
+    PUSHBUTTON      "|<",IDC_INI,7,53,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,53,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,53,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,53,20,14
+END
+
+50008 DIALOGEX 0, 0, 254, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Divisas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAMBIO,69,41,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,66,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,66,44,14
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,109,66,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    LTEXT           "Cambio:",IDC_STATIC,7,41,58,12
+    GROUPBOX        "",IDC_STATIC,4,58,94,26
+    PUSHBUTTON      "|<",IDC_INI,8,66,20,14
+    PUSHBUTTON      "<",IDC_ANT,30,66,20,14
+    PUSHBUTTON      ">",IDC_SIG,52,66,20,14
+    PUSHBUTTON      ">|",IDC_FIN,74,66,20,14
+END
+
+50005 DIALOGEX 0, 0, 261, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Forma de Cobro"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,51,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,51,44,14
+    DEFPUSHBUTTON   "Limpiar",IDLIMPIAR,109,51,44,14,WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,3,43,94,25
+    PUSHBUTTON      "|<",IDC_INI,7,51,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,51,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,51,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,51,20,14
+END
+
+50007 DIALOGEX 0, 0, 262, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Seguros"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,9,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,9,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,54,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,54,44,14
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,109,54,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,9,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    GROUPBOX        "",IDC_STATIC,3,45,94,26
+    PUSHBUTTON      "|<",IDC_INI,7,53,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,53,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,53,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,53,20,14
+END
+
+50006 DIALOGEX 0, 0, 261, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Centros"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,9,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,9,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,54,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,54,44,14
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,109,54,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,9,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    GROUPBOX        "",IDC_STATIC,3,45,94,26
+    PUSHBUTTON      "|<",IDC_INI,7,53,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,53,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,53,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,53,20,14
+END
+
+50010 DIALOGEX 0, 0, 252, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ruta de transporte"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODELO,69,41,168,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MATRICULA,69,57,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARA,69,73,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARA_MAX,69,90,66,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,115,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,205,115,44,14
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,109,115,44,14,WS_DISABLED
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    LTEXT           "Matricula:",IDC_STATIC,7,57,58,12
+    LTEXT           "Modelo:",IDC_STATIC,7,41,58,12
+    LTEXT           "Tara:",IDC_STATIC,7,73,58,12
+    LTEXT           "Tara Máxima:",IDC_STATIC,7,90,58,12
+    GROUPBOX        "",IDC_STATIC,3,107,94,26
+    PUSHBUTTON      "|<",IDC_INI,7,115,20,14
+    PUSHBUTTON      "<",IDC_ANT,29,115,20,14
+    PUSHBUTTON      ">",IDC_SIG,51,115,20,14
+    PUSHBUTTON      ">|",IDC_FIN,73,115,20,14
+END
+
+50011 DIALOGEX 0, 0, 252, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Concepto"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,69,10,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDBUSCAR,109,10,15,12
+    EDITTEXT        IDC_DESCRIPCION,69,25,168,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,107,53,44,14,WS_DISABLED
+    DEFPUSHBUTTON   "Aceptar",IDOK,155,53,44,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,203,53,44,14
+    PUSHBUTTON      "|<",IDC_INI,8,53,20,14
+    PUSHBUTTON      "<",IDC_ANT,30,53,20,14
+    PUSHBUTTON      ">",IDC_SIG,52,53,20,14
+    PUSHBUTTON      ">|",IDC_FIN,74,53,20,14
+    LTEXT           "Código:",IDC_STATIC,7,10,58,12
+    LTEXT           "Descripción:",IDC_STATIC,7,25,58,12
+    GROUPBOX        "",IDC_STATIC,4,45,94,26
+END
+
+50009 DIALOGEX 0, 0, 266, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Zona"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CODIGO,64,10,33,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDBUSCAR,99,10,16,12
+    EDITTEXT        IDC_DESCRIPCION,64,27,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUENTA,64,43,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDBUSCARCUENTA,114,43,16,12
+    EDITTEXT        IDC_DESCUENTA,131,43,128,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Limpiar",IDLIMPIAR,105,66,50,15,WS_DISABLED
+    DEFPUSHBUTTON   "Aceptar",IDOK,157,66,50,15,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDCANCEL,209,66,50,15
+    PUSHBUTTON      "|<",IDC_INI,8,66,18,15
+    PUSHBUTTON      "<",IDC_ANT,28,66,18,15
+    PUSHBUTTON      ">",IDC_SIG,48,66,18,15
+    PUSHBUTTON      ">|",IDC_FIN,68,66,18,15
+    GROUPBOX        "",IDC_STATIC,4,59,86,25
+    LTEXT           "Código:",IDC_STATIC,8,10,32,13
+    LTEXT           "Descripción:",IDC_STATIC,8,27,41,12
+    LTEXT           "Cuenta:",IDC_STATIC,8,43,26,12
+END
+
+50319 DIALOGEX 0, 0, 244, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Informes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,64,69,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,115,69,50,14
+    CONTROL         "Mostrar por pantalla",IDC_TIPO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,16,20,84,12
+    CONTROL         "Imprimir",IDC_TIPO2,"Button",BS_AUTORADIOBUTTON,16,35,
+                    78,12
+    LISTBOX         IDC_LISTA_INFORMES,124,17,105,36,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Tipo de Salida",IDC_STATIC,6,4,108,56
+    GROUPBOX        "Formatos",IDC_STATIC,115,4,122,56
+    CONTROL         "",IDC_CRYSTALREPORT1,
+                    "{00025601-0000-0000-C000-000000000046}",WS_TABSTOP,14,
+                    62,19,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    50009, DIALOG
+    BEGIN
+        RIGHTMARGIN, 259
+    END
+
+    50319, DIALOG
+    BEGIN
+        RIGHTMARGIN, 243
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+50319 DLGINIT
+BEGIN
+    IDC_CRYSTALREPORT1, 0x37a, 264, 0
+0x0000, 0x0000, 0x0029, 0x0000, 0x0001, 0x0000, 0x0021, 0x0000, 0x0100, 
+0x0000, 0x0000, 0x0001, 0x8001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x8001, 0x0001, 0x0000, 0x0000, 0x0550, 0x0000, 0x0000, 0xdd00, 
+0xddfa, 0xddba, 0xddfa, 0xe5ba, 0x0002, 0xe500, 0x0002, 0x0100, 0x0100, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x2c00, 0x6401, 0x6400, 
+0xea00, 0x0001, 0x0000, 0x0200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0200, 0x0000, 0x0200, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 
+0x0100, 0x0100, 0x0100, 0x0100, 0x003c, 0x0000, 0x0101, 0x0101, 0x0001, 
+0x0001, 0x0000, 0x0070, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DIRENV_NOMBRE       "Falta el nombre de la direción de envio"
+    IDS_NO_CODIGO           "El código no puede permanecer vacio"
+    IDS_ERROR_BD            "Error de Base de Datos"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SIN_CODIGO          "No hay ningun objeto seleccionado"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Utilidades.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,515 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Referencias.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Referencias.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Referencias.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_GESTION_REFERENCIAS DIALOGEX 0, 0, 484, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gestión de referencias"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDT_FAMILIA,55,19,27,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_BUSQUEDA_FAMILIAS,84,19,14,12
+    EDITTEXT        IDT_SUBFAMILIA,55,33,27,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_BUSQUEDA_SUBFAMILIAS,84,34,14,12
+    EDITTEXT        IDT_COD_REFERENCIA,55,48,80,13,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_BUSQUEDA_REFERENCIA,134,48,14,12
+    EDITTEXT        IDT_NOMBRE,185,48,206,13,ES_MULTILINE | ES_AUTOVSCROLL
+    EDITTEXT        IDT_NOMBRE_LARGO,55,63,336,13,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    EDITTEXT        IDT_CUENTAS_VENTAS,77,97,50,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "...",IDB_BUSQUEDA_CUENTAS_VENTAS,128,97,14,12
+    EDITTEXT        IDT_CUENTAS_COMPRAS,77,111,50,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDB_BUSQUEDA_CUENTAS_COMPRAS,128,111,14,12
+    EDITTEXT        IDT_PUNTOVERDE,77,124,50,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDT_IVA,77,138,50,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDT_RECARGO,77,151,50,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDF_FECHA_ALTA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,334,97,57,12,WS_EX_LEFTSCROLLBAR
+    CONTROL         "",IDF_FECHA_BAJA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,334,111,57,12,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDT_PESO,333,137,57,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDT_MINIMO,333,152,57,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDCOM_MOV_ALMACEN,76,187,52,42,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDCOM_ALQUILADO,186,188,53,40,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Tarifas venta",IDB_TARIFAS_VENTAS,410,17,59,14
+    PUSHBUTTON      "Tarifas compra",IDB_TARIFAS_COMPRAS,410,36,59,14
+    PUSHBUTTON      "Proveedores",IDB_PROVEEDORES,410,56,59,14
+    PUSHBUTTON      "Nuevo",IDB_NUEVO,234,180,50,14
+    DEFPUSHBUTTON   "Aceptar",IDB_ACEPTAR,289,180,50,14
+    PUSHBUTTON      "Cancelar",IDB_CANCELAR,344,180,50,14
+    PUSHBUTTON      "|< ",IDC_INI,12,179,15,14
+    PUSHBUTTON      "<",IDC_ANT,31,179,15,14
+    PUSHBUTTON      ">",IDC_SIG,50,179,15,14
+    PUSHBUTTON      ">|",IDC_FIN,69,179,15,14
+    LTEXT           "Código:",IDC_STATIC,14,48,35,8
+    LTEXT           "Nombre:",IDC_STATIC,154,49,29,9
+    LTEXT           "Descripción:",IDC_STATIC,14,63,38,9
+    LTEXT           "Familia:",IDC_STATIC,14,19,38,10
+    LTEXT           "Subfamilia:",IDC_STATIC,14,33,38,10
+    LTEXT           "Cuenta ventas:",IDC_STATIC,13,97,57,9
+    LTEXT           "Cuenta compras:",IDC_STATIC,13,111,57,9
+    LTEXT           "Punto Verde:",IDC_STATIC,13,124,60,9
+    LTEXT           "IVA:",IDC_STATIC,13,138,57,9
+    LTEXT           "Recargo:",IDC_STATIC,13,151,57,9
+    LTEXT           "Fecha Alta:",IDC_STATIC,272,97,39,11
+    LTEXT           "Fecha Baja:",IDC_STATIC,272,111,39,11
+    LTEXT           "Peso Unidad (kgs):",IDC_STATIC,272,139,62,15
+    LTEXT           "Stock Minimo:",IDC_STATIC,272,154,45,15
+    LTEXT           "Mov. Almacén:",IDC_STATIC,12,191,54,11,NOT WS_VISIBLE
+    LTEXT           "Alquilado:",IDC_STATIC,130,191,54,10,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,7,171,82,27
+    GROUPBOX        "Referencia",IDC_STATIC,7,7,391,76
+    GROUPBOX        "Cuentas",IDC_STATIC,8,86,247,83
+    GROUPBOX        "Fecha",IDC_STATIC,262,86,137,42
+    GROUPBOX        "Características",IDC_STATIC,262,128,137,41
+    GROUPBOX        "Opciones",IDC_STATIC,8,177,248,29,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,404,7,71,71
+    EDITTEXT        IDT_FAM_DES,100,19,141,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDT_SUBFAM_DES,100,34,141,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DES_VENTAS,143,97,107,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DES_COMPRAS,143,111,107,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC,228,171,171,27
+END
+
+IDD_DLG_TARIFAS_VENTAS DIALOGEX 0, 0, 304, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Tarifas Ventas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TARIFAA,60,8,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOA,209,8,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAB,60,24,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOB,209,24,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAC,60,40,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOC,209,40,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAD,60,56,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOD,209,56,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAE,60,72,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOE,209,72,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAF,60,88,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOF,209,88,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAG,60,103,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOG,209,103,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAH,60,119,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOH,209,119,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARIFAI,60,135,81,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTOI,209,135,83,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUENTA,60,157,55,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_CUENTA_ALQUILER,117,157,14,12
+    CONTROL         "Alquiler",IDC_TIPOVENTA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,41,188,41,9
+    CONTROL         "Venta",IDC_TIPOVENTA2,"Button",BS_AUTORADIOBUTTON,41,
+                    202,69,9
+    CONTROL         "Otros",IDC_TIPOVENTA3,"Button",BS_AUTORADIOBUTTON,41,
+                    214,69,9
+    CONTROL         "Entrega",IDC_TIPOVENTA4,"Button",BS_AUTORADIOBUTTON,41,
+                    227,69,9
+    CONTROL         "Recogida",IDC_TIPOVENTA5,"Button",BS_AUTORADIOBUTTON,41,
+                    241,69,9
+    CONTROL         "Mensual",IDC_ALQUILER1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,187,191,76,8
+    CONTROL         "Día Laborable",IDC_ALQUILER2,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,187,200,76,8
+    CONTROL         "Días Naturales",IDC_ALQUILER3,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,187,209,76,8
+    EDITTEXT        IDC_TARIFA_VENTA,182,235,83,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "Aceptar",IDOK,98,268,50,13
+    PUSHBUTTON      "Cancelar",IDCANCEL,150,268,50,13
+    LTEXT           "Tarifa  A:",IDC_STATIC,7,8,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,8,45,12
+    LTEXT           "Tarifa  B:",IDC_STATIC,7,24,49,11
+    LTEXT           "Descuento:",IDC_STATIC,156,24,45,11
+    LTEXT           "Tarifa  C:",IDC_STATIC,7,40,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,40,45,12
+    LTEXT           "Tarifa  D:",IDC_STATIC,7,56,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,56,45,12
+    LTEXT           "Tarifa  E:",IDC_STATIC,7,72,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,72,45,12
+    LTEXT           "Tarifa  F:",IDC_STATIC,7,88,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,88,45,12
+    LTEXT           "Tarifa  G:",IDC_STATIC,7,104,49,11
+    LTEXT           "Descuento:",IDC_STATIC,156,104,45,12
+    LTEXT           "Tarifa  H:",IDC_STATIC,7,119,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,119,45,12
+    LTEXT           "Tarifa  I:",IDC_STATIC,7,135,49,12
+    LTEXT           "Descuento:",IDC_STATIC,156,135,45,12
+    LTEXT           "Cuenta Alquiler:",IDC_STATIC,7,159,52,12
+    EDITTEXT        IDC_DES_ALQUILER,133,157,159,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Tipo de venta",IDC_STATIC,7,179,134,75
+    GROUPBOX        "Tipo Alquiler",IDC_STATIC,156,179,136,42
+    GROUPBOX        "Precio de Venta",IDC_STATIC,156,222,136,32
+END
+
+IDD_DLG_TARIFAS_COMPRAS DIALOGEX 0, 0, 232, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Tarifa Compras"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_PRECIO_COSTE,60,12,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTO,165,12,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Aceptar",IDC_ACEPTAR,62,41,50,13
+    PUSHBUTTON      "Cancelar",IDC_CANCELAR,118,41,50,13
+    LTEXT           "Precio coste:",IDC_STATIC,13,13,42,12
+    LTEXT           "Descuento:",IDC_STATIC,120,13,38,12
+END
+
+IDD_GESTION_FAMILIAS DIALOGEX 0, 0, 300, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gestión de Familias"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FAMILIA,81,7,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_BUSCAR_FAMILIA,123,7,15,12
+    EDITTEXT        IDC_DFAMILIA,141,7,152,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCOMERCIAL,253,9,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_DESCOMPRA,253,7,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "Nuevo",IDC_NUEVO,121,32,49,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,177,32,49,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,233,32,50,14
+    PUSHBUTTON      "|<",IDC_INI,15,32,16,14
+    PUSHBUTTON      "<",IDC_ANT,37,32,16,14
+    PUSHBUTTON      ">",IDC_SIG,59,32,16,14
+    PUSHBUTTON      ">|",IDC_FIN,81,32,16,14
+    LTEXT           "Familia:",IDC_STATIC,7,7,54,8
+    GROUPBOX        "",IDC_STATIC,7,24,100,26
+    GROUPBOX        "",IDC_STATIC,113,24,180,26
+    LTEXT           "Descuento compra:",IDC_STATIC,179,7,63,12,NOT 
+                    WS_VISIBLE
+    LTEXT           "Descuento comercial:",IDC_STATIC,179,8,74,12,NOT 
+                    WS_VISIBLE
+END
+
+IDD_GESTION_SUBFAMILIAS DIALOGEX 0, 0, 300, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gestión de Subfamilias"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SUBFAMILIA,81,36,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDB_BUSCAR_SUBFAMILIA,123,36,15,12,WS_DISABLED
+    EDITTEXT        IDC_DSUBFAMILIA,141,36,152,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_DESCOMERCIAL,189,62,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_DESCOMPRA,189,62,40,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Nuevo",IDC_NUEVO,124,62,49,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,179,62,49,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,234,62,50,14
+    PUSHBUTTON      "|<",IDC_INI,15,62,16,14
+    PUSHBUTTON      "<",IDC_ANT,37,62,16,14
+    PUSHBUTTON      ">",IDC_SIG,59,62,16,14
+    PUSHBUTTON      ">|",IDC_FIN,81,62,16,14
+    GROUPBOX        "",-1,7,54,100,26
+    LTEXT           "Subfamilia:",-1,7,36,54,8
+    GROUPBOX        "",-1,115,54,178,26
+    LTEXT           "Descuento compra:",-1,230,72,63,12,NOT WS_VISIBLE
+    LTEXT           "Descuento comercial:",-1,219,67,74,12,NOT WS_VISIBLE
+    LTEXT           "Familia:",-1,7,16,54,8
+    EDITTEXT        IDC_CFAMILIA,81,15,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_BUSCAR_FAMILIA,123,15,15,12
+    EDITTEXT        IDC_DFAMILIA,141,15,152,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DLG_PROVEEDORES DIALOGEX 0, 0, 389, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Proveedores"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,267,152,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,321,152,50,14
+    LTEXT           "Código:",IDC_STATIC,19,18,29,10
+    LTEXT           "Descripción:",IDC_STATIC,125,18,39,11
+    EDITTEXT        IDC_CODIGO,45,16,74,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESCRIPCION,166,16,205,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_LIST_PROVE,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,18,37,353,105,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Buscar",IDBUSCAR,159,152,50,14
+    PUSHBUTTON      "Eliminar",ID_ELIMINAR,213,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_GESTION_REFERENCIAS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 475
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_TARIFAS_VENTAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        VERTGUIDE, 19
+        VERTGUIDE, 56
+        VERTGUIDE, 60
+        VERTGUIDE, 88
+        VERTGUIDE, 92
+        VERTGUIDE, 141
+        VERTGUIDE, 148
+        VERTGUIDE, 156
+        VERTGUIDE, 162
+        VERTGUIDE, 168
+        VERTGUIDE, 182
+        VERTGUIDE, 187
+        VERTGUIDE, 209
+        VERTGUIDE, 258
+        VERTGUIDE, 263
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 281
+        HORZGUIDE, 20
+        HORZGUIDE, 24
+        HORZGUIDE, 35
+        HORZGUIDE, 40
+        HORZGUIDE, 52
+        HORZGUIDE, 56
+        HORZGUIDE, 68
+        HORZGUIDE, 72
+        HORZGUIDE, 84
+        HORZGUIDE, 88
+        HORZGUIDE, 100
+        HORZGUIDE, 104
+        HORZGUIDE, 115
+        HORZGUIDE, 119
+        HORZGUIDE, 131
+        HORZGUIDE, 135
+        HORZGUIDE, 147
+        HORZGUIDE, 157
+        HORZGUIDE, 169
+        HORZGUIDE, 179
+        HORZGUIDE, 254
+        HORZGUIDE, 268
+        HORZGUIDE, 273
+    END
+
+    IDD_DLG_TARIFAS_COMPRAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 229
+        VERTGUIDE, 18
+        VERTGUIDE, 66
+        VERTGUIDE, 72
+        VERTGUIDE, 118
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 54
+        HORZGUIDE, 24
+        HORZGUIDE, 48
+    END
+
+    IDD_GESTION_FAMILIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 21
+        VERTGUIDE, 70
+        VERTGUIDE, 81
+        TOPMARGIN, 7
+    END
+
+    IDD_GESTION_SUBFAMILIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 21
+        VERTGUIDE, 70
+        VERTGUIDE, 81
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DLG_PROVEEDORES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_ERROR_BD            "Error de Base de Datos"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_FAMILIA          "No hay ninguna familia insertada, inserte una antes de ingresar una Subfamilia"
+    IDC_CUENTA_NO_VALIDA    "La cuenta no existe"
+    IDC_MAXIMO_CARACTER     "El campo ha excedido el máximo de caracteres"
+    IDC_NO_FAMILIA          "La Familia no existe"
+    IDC_NO_SUBFAMILIA       "La Subfamilia no existe"
+    IDC_NO_CUENTA           "La cuenta no existe"
+    IDC_INSERTAR_BD         "Error al insertar datos"
+    IDC_CODIGO_NO_VACIO     "No se puede crear una referencia sin código"
+    IDC_FALLO_CONVERSION    "Fallo en la conversión de tipo"
+    IDC_CAMPOLARGO35        "El campo no debe sobrepasar los 35 caracteres"
+    IDC_CAMPOLARGO9         "El campo no debe sobrepasar los 9 caracteres"
+    IDC_NUMERO_NOVALIDO     "El número introducido no es correcto"
+    IDC_CAMPOLARGO32        "El campo no debe sobrepasar los 3 caracteres"
+    IDS_PROVE_NO_EXISTS     "La cuenta de proveedor no existe"
+    IDS_PROVE_YA_EN_LISTA   "El proveedor ya está en la lista"
+    IDC_CAMPOLARGO100       "El campo no debe sobrepasar los 100 caracteres"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CAMPOLARGO255       "El campo no debe sobrepasar los 255 caracteres"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Referencias.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

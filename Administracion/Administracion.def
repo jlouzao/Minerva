@@ -1,0 +1,6 @@
+; Administracion.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "Administracion"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

@@ -1,0 +1,13 @@
+//
+// Ventas.RC2; recursos que Microsoft Visual C++ no edita directamente
+//
+
+#ifdef APSTUDIO_INVOKED
+#error este archivo no se puede editar con Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Agregar aquí los recursos editados manualmente...
+
+/////////////////////////////////////////////////////////////////////////////

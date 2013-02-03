@@ -1,0 +1,6 @@
+; Compras.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "Comprasd"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

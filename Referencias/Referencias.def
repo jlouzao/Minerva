@@ -1,0 +1,6 @@
+; Referencias.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "Referencias"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

@@ -1,0 +1,381 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Compras.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Compras.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Compras.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMPRAS_DLG DIALOGEX 0, 0, 496, 365
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Compras"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PROVEEDOR,79,17,53,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,133,17,14,13
+    EDITTEXT        IDC_ALMACEN,16,118,44,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,62,118,14,13
+    CONTROL         "Nacional",IDC_RB_NACIONAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,50,145,51,10
+    CONTROL         "Exportación",IDC_RB_EXPORTACION,"Button",
+                    BS_AUTORADIOBUTTON,165,146,51,10
+    EDITTEXT        IDC_OBSPED,17,175,243,23,ES_MULTILINE | ES_AUTOVSCROLL
+    EDITTEXT        IDC_FPAGCOB,363,22,31,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_FPAGCOB,395,22,14,13
+    EDITTEXT        IDC_N_PAGOS,363,38,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PAGO,363,54,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DIAS_DESCUENTO,363,70,31,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_DIA_PAGO1,363,86,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DIA_PAGO2,398,86,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DIA_PAGO3,433,86,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DESCUENTO1,363,102,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCUENTO2,398,102,31,13,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DESCUENTO3,433,102,31,13,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_DESCUENTO1OLD,458,102,31,13,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_PP,363,118,31,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CENTRO,331,150,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTRO,356,150,14,13
+    EDITTEXT        IDC_REFERENCIA,331,167,146,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,331,185,55,13
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,217,464,92
+    DEFPUSHBUTTON   "Buscar",ID_BUSCAR,87,315,50,14
+    DEFPUSHBUTTON   "Eliminar",ID_ELIMINAR,141,315,50,14
+    DEFPUSHBUTTON   "Nuevo",ID_NUEVO,262,343,52,14
+    PUSHBUTTON      "Modificar",ID_MODIFICAR,318,343,52,14
+    DEFPUSHBUTTON   "Guardar",IDOK,374,343,52,14
+    PUSHBUTTON      "Salir",IDCANCEL,431,343,52,14
+    EDITTEXT        IDC_DES_PROVEEDOR,148,17,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DIRECCION,79,31,183,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NUMERO,79,45,60,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CP,199,45,63,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_POBLACION,79,59,183,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_OBSERVACIONES,79,73,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_TELEFONO,79,87,63,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_FAX,199,87,63,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_DES_ALMACEN,76,118,186,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DES_FPAGCOB,410,22,68,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_DES_CENTRO,372,150,105,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_TOTALBRUTO,367,316,62,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Proveedor",IDC_STATIC_CLIENTE,7,6,261,101
+    LTEXT           "Proveedor:",IDC_STATIC,19,18,50,11
+    LTEXT           "Dirección:",IDC_STATIC,19,33,34,13
+    LTEXT           "Número:",IDC_STATIC,19,46,33,11
+    LTEXT           " Código Postal:",IDC_STATIC,147,47,48,11
+    LTEXT           "Población:",IDC_STATIC,19,62,39,11
+    LTEXT           "Observaciones:",IDC_STATIC,19,76,50,11
+    LTEXT           "Teléfono:",IDC_STATIC,19,90,41,11
+    LTEXT           "Fax:",IDC_STATIC,172,89,25,12
+    GROUPBOX        "Tipo",IDC_STATIC_TIPO,7,136,261,24
+    GROUPBOX        "Almacen",IDC_STATIC_GRUPO,7,108,261,29
+    GROUPBOX        "Datos facturación",IDC_STATIC,273,6,210,131
+    LTEXT           "Forma de Pago:",IDC_STATIC,283,23,54,11
+    LTEXT           "Nº de pagos:",IDC_STATIC,283,39,44,11
+    LTEXT           "1º Vencimiento:",IDC_STATIC,283,55,64,11
+    LTEXT           "Dias entre vencimientos:",IDC_STATIC,283,71,79,11
+    LTEXT           "Dias de pago:",IDC_STATIC,283,87,51,11
+    LTEXT           "Dto. comercial:",IDC_STATIC,283,103,49,11
+    GROUPBOX        "Datos",IDC_STATIC,273,138,210,66
+    LTEXT           "Fecha:",IDC_STATIC_FECHA1,278,188,45,8
+    LTEXT           "Centro:",IDC_STATIC,278,153,45,8
+    LTEXT           "Su referencia:",IDC_STATIC,278,170,45,8
+    LTEXT           "Valor Bruto:",IDC_STATIC,325,318,40,8
+    GROUPBOX        "Artículos",IDC_STATIC,7,206,476,128
+    LTEXT           "Dto. Pronto Pago:",IDC_STATIC,283,119,61,11
+    GROUPBOX        "Observaciones",IDC_STATIC_TIPO2,7,162,261,42
+    LTEXT           "Euros",IDC_STATIC,434,318,18,8
+END
+
+IDD_DLG_BUSCACOMPRA DIALOGEX 0, 0, 356, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Modificar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,126,48,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,180,48,50,14
+    LTEXT           "Nº de Pedido:",IDC_STATIC_NUMERO,11,22,47,11
+    EDITTEXT        IDC_NUMCOMPRA,62,20,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_VENTA,120,20,15,13
+    EDITTEXT        IDC_CUENTA,181,20,56,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESCUENTA,241,20,108,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Proveedor:",IDC_STATIC,141,22,36,11
+END
+
+IDD_DLG_RECEPCION_PEDIDOS DIALOGEX 0, 0, 386, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Recepción de Pedidos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,160,197,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,219,197,50,14
+    LTEXT           "Proveedor:",IDC_STATIC,7,7,43,11
+    EDITTEXT        IDC_CUENTA,84,7,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,141,7,14,13
+    EDITTEXT        IDC_NOMBRE,158,7,221,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nº de Pedido:",IDC_STATIC_NUMERO,7,23,47,14
+    EDITTEXT        IDC_PEDIDO,84,22,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_PEDIDO,141,22,14,13
+    GROUPBOX        "Artículos",IDC_STATIC,7,73,372,119
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,19,86,347,98
+    LTEXT           "Albaranes del pedido:",IDC_STATIC,7,54,69,14
+    EDITTEXT        IDC_ALBARANES,84,55,295,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Observaciones:",IDC_STATIC_NUMERO2,7,38,51,14
+    EDITTEXT        IDC_OBSERVACIONES,84,39,295,13,ES_AUTOHSCROLL
+END
+
+IDD_DLG_RECEPCION_FACTURA DIALOGEX 0, 0, 553, 282
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Recepción Factura"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PEDIDO,61,20,83,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDB_PEDIDO,147,20,16,12
+    EDITTEXT        IDC_PROVEEDOR,61,33,83,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DES_PROVEEDOR,147,33,154,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_FACTURA,441,16,91,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FECHFACTURA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,441,29,91,12
+    CONTROL         "",IDC_RECEPCION,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,441,42,91,12
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,22,95,511,124
+    EDITTEXT        IDC_TOTAL,465,237,70,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TOTALNETO,465,252,70,12,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Guardar",IDOK,221,257,50,14,WS_DISABLED
+    PUSHBUTTON      "Salir",IDCANCEL,281,257,50,14
+    LTEXT           "Nº Pedido:",IDC_STATIC,16,20,42,10
+    LTEXT           "Proveedor:",IDC_STATIC,16,33,43,11
+    GROUPBOX        "",IDC_STATIC,7,7,539,53
+    GROUPBOX        "",IDC_STATIC,7,84,539,144
+    GROUPBOX        "",IDC_STATIC,7,60,539,24
+    LTEXT           "Nº Factura:",IDC_STATIC,332,19,42,10
+    LTEXT           "Fecha Factura:",IDC_STATIC,332,32,74,10
+    LTEXT           "Fecha recepción de factura:",IDC_STATIC,332,45,103,10
+    LTEXT           "Total Bruto:",IDC_STATIC,394,238,69,11
+    CONTROL         "Aceptación Factura",IDC_ACEPTACION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,238,93,16
+    GROUPBOX        "",IDC_STATIC,388,228,158,40
+    LTEXT           "Total Neto:",IDC_STATIC,394,252,69,11
+    LTEXT           "IVA :",IDC_STATIC,16,71,40,10
+    EDITTEXT        IDC_IVA,61,69,42,12,ES_AUTOHSCROLL
+    LTEXT           "Descuento General:",IDC_STATIC,173,70,80,10
+    EDITTEXT        IDC_GENERAL,259,68,42,12,ES_AUTOHSCROLL
+    LTEXT           "Descuento por Pronto Pago:",IDC_STATIC,332,70,104,10
+    EDITTEXT        IDC_PP,441,68,42,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COMPRAS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DLG_BUSCACOMPRA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DLG_RECEPCION_PEDIDOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        VERTGUIDE, 76
+        VERTGUIDE, 84
+        VERTGUIDE, 141
+        VERTGUIDE, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DLG_RECEPCION_FACTURA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 546
+        BOTTOMMARGIN, 280
+        HORZGUIDE, 146
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_PROVEEDOR        "Falta el proveedor"
+    IDS_ERROR_BD            "Error al abrir la Base de Datos"
+    IDS_PROVEEDOR_NO_EXISTE "El proveedor no existe"
+    IDS_CENTRO_NO_EXISTE    "El centro no existe"
+    IDS_COMPRA_NO_EXISTE    "El código del pedido no existe"
+    IDS_ALBARAN_NO_EXISTE   "El albaran no existe"
+    IDS_ARTI_YA_EN_LISTA    "El artículo ya está en la lista"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ARTI_NO_EXISTE      "El artículo no existe"
+    IDS_NO_ALMACEN          "Debe seleccionar un almacen"
+    IDS_CREADO_PEDIDO       "Creado pedido número: %s"
+    IDS_MAS_RECIBIDO        "El número de articulos recibido es mayor que el pedido"
+    IDS_PEDIDO              "Creado pedido número: %s"
+    IDS_ALBARAN             "Creado albaran número: %s"
+    IDS_MODIFICACION_PEDIDO "Modificado pedido: %s / Eliminados albaranes:%s"
+    IDS_PEDIDOMODIFICADO    "Modificado el pedido número: %s"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Compras.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

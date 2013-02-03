@@ -1,0 +1,414 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Minerva.rc2""  // Recursos editados que no son de Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Minerva.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MINERVA_DIALOG DIALOGEX 0, 0, 374, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Minerva Gestión"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_EMPRESAS_DIALOG DIALOGEX 0, 0, 193, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Empresas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,45,133,52,15
+    PUSHBUTTON      "Cancelar",IDCANCEL,99,133,52,15
+    LISTBOX         IDC_LIST_EMPRESAS,7,7,179,115,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EJERCICIOS_DIALOG DIALOGEX 0, 0, 193, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Ejercicios"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,45,133,51,15
+    PUSHBUTTON      "Cancelar",IDCANCEL,99,133,51,15
+    LISTBOX         IDC_EJERCICIOS_LISTA,7,7,179,115,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_USUARIO_DIALOG DIALOGEX 0, 0, 178, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,37,65,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,89,65,50,14
+    LTEXT           "Usuario:",IDC_STATIC,18,19,42,12
+    LTEXT           "Contraseña:",IDC_STATIC,18,40,42,12
+    EDITTEXT        IDC_USUARIO,79,17,78,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,79,38,78,13,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Minerva.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>.  Reservados todos los derechos."
+            VALUE "OriginalFilename", "Minerva.exe"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MINERVA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_EMPRESAS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_EJERCICIOS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_USUARIO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_SUPERUSUARIO MENU 
+BEGIN
+    POPUP "&Referencias"
+    BEGIN
+        MENUITEM "&Gestión de Referencias",     ID_GESTI_GESTI
+        POPUP "Gestión de &Familias"
+        BEGIN
+            MENUITEM "Gestión de &Familias",        ID_GESTI_GESTI32799
+            MENUITEM "Gestión de &Subfamilias",     ID_GESTI_GESTI32800
+        END
+    END
+    POPUP "&Ventas"
+    BEGIN
+        POPUP "Gestión &ofertas"
+        BEGIN
+            MENUITEM "&Gestión ofertas",            ID_VENTAS_GESTIONOFERTAS
+            MENUITEM "&Emisión de ofertas",         ID_VENTAS_EMITIR_OFERTAS
+            MENUITEM "&Aceptación/Denegación ofertas", 
+                                                    ID_VENTAS_ACEPTA_OFERTA
+        END
+        POPUP "Gestión &pedidos ventas"
+        BEGIN
+            MENUITEM "Gestión pedidos",             ID_VENTAS_GESTION_PEDIDOS
+
+            MENUITEM "Emisión de pedidos",          ID_VENTAS_EMITIR_PEDIDOS
+        END
+        POPUP "Gestión de &albaranes"
+        BEGIN
+            MENUITEM "Preparación albaranes",       ID_VENTAS_PREALBARANES
+            MENUITEM "Gestión albaranes",           ID_VENTAS_GESTION_ALBARANES
+
+            MENUITEM "Emisión de albaranes",        ID_VENTAS_EMITIR_ALBARANES
+
+            POPUP "Mantenimiento de obras"
+            BEGIN
+                MENUITEM "Alta/Modificación obra",      ID_VENTAS_ALTA_OBRAS
+                MENUITEM "Cierre obra",                 ID_VENTAS_CIERRE_OBRAS
+
+                MENUITEM "Consulta obra",               ID_VENTAS_CONSULTA_OBRA
+
+            END
+        END
+        POPUP "Gestión de &facturación"
+        BEGIN
+            MENUITEM "Facturación",                 ID_VENTAS_FACTURACION
+            MENUITEM "Modificación de facturas",    ID_VENTAS_MODIFICAFACTURAS
+
+            MENUITEM "Emisión de facturas",         ID_VENTAS_EMITIR_FACTURAS
+
+            MENUITEM "Emisión de facturas a origen", 
+                                                    ID_VENTAS_EMITIR_FACTURAS_ORIGEN
+
+            MENUITEM "Gestión de abonos",           ID_VENTAS_ABONOS
+            MENUITEM "Calendario laboral",          ID_VENTAS_CALENDARIOLABORAL
+
+        END
+    END
+    POPUP "&Compras"
+    BEGIN
+        POPUP "Gestión Pedido"
+        BEGIN
+            MENUITEM "Gestion Compra",              ID_GESTI_GESTIONCOMPRA
+        END
+        POPUP "Gestión Albaranes "
+        BEGIN
+            MENUITEM "Gestion Albaranes",           ID_GESTIONALBARANES_GESTIONALBARANES
+
+            MENUITEM "Recepción de pedidos",        ID_GESTIONALBARANES_RECEPCI
+
+        END
+        MENUITEM "Recepción de Facturas",       ID_RECEPCIONDEFACTURAS
+    END
+    POPUP "Cobros"
+    BEGIN
+        POPUP "Gestion de cobros"
+        BEGIN
+            MENUITEM "Nuevo cobro",                 ID_GESTION_NUEVOCOBRO
+            MENUITEM "Modificación cobro",          ID_GESTION_MODIFICACION_COBRO
+
+        END
+        MENUITEM "Introducción de cobros",      ID_COBROS_INTRO_COBROS
+        MENUITEM "Recepción de aceptos",        ID_COBROS_RECEP_ACEPTOS
+        MENUITEM "Informes de cobros",          ID_COBROS_INFORMES
+    END
+    POPUP "&Almacen"
+    BEGIN
+        POPUP "&Existencias"
+        BEGIN
+            MENUITEM "&Existencias por artículo",   ID_EXISTENCIAS_EXISTENCIASPORART
+
+        END
+        MENUITEM "&Introducción regularizaciones", 
+                                                ID_ALMACEN_REGULARIZACIONES
+        MENUITEM "&Transferencias almacén",     ID_ALMACEN_TRANSFERENCIASALMAC
+
+    END
+    POPUP "&Utilidades"
+    BEGIN
+        MENUITEM "&Cambiar de Empresa",         ID_UTIL_CAMBIAREMPRESA
+        POPUP "&Gestión de Ficheros"
+        BEGIN
+            MENUITEM "&Gestión de cuentas",         ID_GESTI_GESTI32803
+            MENUITEM "Gestión de idiomas",          ID_GESTION_IDIOMAS
+            MENUITEM "Gestión de países",           ID_GESTION_PAISES
+            MENUITEM "Gestión de centros",          ID_GESTION_CENTROS
+            MENUITEM "Gestión de divisas",          ID_GESTION_DIVISAS
+            MENUITEM "Gestión de zonas",            ID_GESTION_ZONAS
+            MENUITEM "Gestión de compañías de seguros", ID_GESTION_SEGUROS
+            MENUITEM "Gestión de conceptos contables", ID_GESTION_CONCEPTOS
+            MENUITEM "Gestión de rutas de transporte", ID_GESTION_RUTRANS
+            MENUITEM "Gestión de formas de pago / cobro", 
+                                                    ID_GESTION_GESTIONDEFORMASDEPAGO
+
+        END
+    END
+    POPUP "&Administración"
+    BEGIN
+        MENUITEM "&Gestión de usuarios",        ID_ADM_CREARUSUARIO
+    END
+END
+
+IDR_MENU_COMERCIAL MENU 
+BEGIN
+    POPUP "&Ventas"
+    BEGIN
+        MENUITEM "Gestión de Ventas",           ID_VENTAS_GESTI
+    END
+    POPUP "&Utilidades"
+    BEGIN
+        MENUITEM "&Cambiar de Empresa",         ID_UTIL_CAMBIAREMPRESA
+    END
+END
+
+IDR_MENU_PRODUCCION MENU 
+BEGIN
+    POPUP "&Compras"
+    BEGIN
+        MENUITEM "&Gestión de compras",         ID_COMPRAS_GESTI
+    END
+    POPUP "&Utilidades"
+    BEGIN
+        MENUITEM "Cambiar de Empresa",          ID_UTIL_CAMBIAREMPRESA
+    END
+END
+
+IDR_MENU_ALMACEN MENU 
+BEGIN
+    POPUP "&Almacén"
+    BEGIN
+        MENUITEM "Gestión de Almacén",          ID_ALMAC_GESTI
+    END
+    POPUP "&Utilidades"
+    BEGIN
+        MENUITEM "&Cambiar de Empresa",         ID_UTIL_CAMBIAREMPRESA
+    END
+END
+
+IDR_MENU_FACTURACION MENU 
+BEGIN
+    POPUP "Utilidades"
+    BEGIN
+        MENUITEM "Cambiar de Empresa",          ID_UTIL_CAMBIAREMPRESA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_ERROR_USU_VACIO     "Debe introducir el usuario"
+    IDC_ERROR_USU_LARGO     "Usuario demasiado largo. Máximo 8 caracteres"
+    IDC_ERROR_USU_NO        "Usuario no válido"
+    IDC_ERROR_PASS_VACIO    "Debe introducir la contraseña"
+    IDC_ERROR_BD            "Error de Base de Datos"
+    IDC_ERROR_PASS_NO       "Contraseña no válida"
+    IDS_CERRAR_APP          "¿Esta seguro que desea cerrar la aplicación?"
+    IDC_ERROR_PASSW_LARGA   "Contraseña demasiado larga. Máximo 8 caracteres"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Minerva.rc2"  // Recursos editados que no son de Microsoft Visual C++
+#include "afxres.rc"         // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

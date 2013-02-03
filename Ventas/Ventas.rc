@@ -1,0 +1,1331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Ventas.rc2""  // Recursos editados que no son de Microsoft Visual C++#include ""afxres.rc""     // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nombre de la compañía>"
+            VALUE "FileDescription", "TODO: <Descripción del archivo>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Ventas.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>. Reservados todos los derechos."
+            VALUE "OriginalFilename", "Ventas.dll"
+            VALUE "ProductName", "TODO: <Nombre del producto>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Traducción", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_VENTAS DIALOGEX 0, 0, 587, 418
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Cliente:",IDC_STATIC,24,46,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,84,44,53,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,138,44,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,153,44,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,24,60,34,13
+    EDITTEXT        IDC_EDIT_DIRECCION,84,58,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Número:",IDC_STATIC,24,74,33,11
+    EDITTEXT        IDC_EDIT_NUMERO,84,73,60,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " Código Postal:",IDC_STATIC,152,75,48,11
+    EDITTEXT        IDC_EDIT_CP,204,73,63,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,24,89,39,11
+    EDITTEXT        IDC_EDIT_POBLACION,84,87,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC,24,103,50,11
+    EDITTEXT        IDC_EDIT_OBSERVACIONES,84,101,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Teléfono:",IDC_STATIC,24,118,41,11
+    EDITTEXT        IDC_EDIT_TELEFONO,84,116,60,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Fax:",IDC_STATIC,158,118,25,12
+    EDITTEXT        IDC_EDIT_FAX,207,116,60,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Estado",IDC_STATIC_GRUPO,16,136,122,30
+    EDITTEXT        IDC_EDIT_ALMACEN,305,15,45,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,351,15,14,13
+    EDITTEXT        IDC_EDIT_ESTADO,34,147,88,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Tipo",IDC_STATIC_TIPO,144,136,129,30
+    CONTROL         "Nacional",IDC_RB_NACIONAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,156,149,43,10
+    CONTROL         "Exportación",IDC_RB_EXPORTACION,"Button",
+                    BS_AUTORADIOBUTTON,209,149,51,10
+    GROUPBOX        "Datos facturación",IDC_STATIC,15,168,258,86
+    LTEXT           "Tarifa:",IDC_STATIC,25,180,24,11
+    EDITTEXT        IDC_EDIT_TARIFA,84,178,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dto. Comercial:",IDC_STATIC,25,195,54,11
+    EDITTEXT        IDC_EDIT_DESCUENTO1,84,193,43,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESCUENTO2,147,193,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DESCUENTO3,205,193,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "Prongo Pago:",IDC_STATIC,25,210,44,11
+    EDITTEXT        IDC_EDIT_PRONTOPAGO,84,208,43,13,ES_AUTOHSCROLL
+    LTEXT           "G. Facturación:",IDC_STATIC,148,180,52,11
+    EDITTEXT        IDC_EDIT_GFACTURACION,205,178,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Riesgo concedido:",IDC_STATIC,25,238,59,11
+    EDITTEXT        IDC_EDIT_RCONCEDIDO,84,236,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Riesgo actual:",IDC_STATIC,148,238,49,11
+    EDITTEXT        IDC_EDIT_RACTUAL,205,236,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Obra",IDC_STATIC,279,34,236,61
+    LTEXT           "Obra:",IDC_STATIC,285,48,22,8
+    EDITTEXT        IDC_EDIT_OBRA,323,46,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA,349,46,14,13
+    EDITTEXT        IDC_EDIT_NOMBREOBRA,364,46,145,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,285,62,34,13
+    EDITTEXT        IDC_EDIT_DIRECCIONOBRA,324,61,185,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,285,77,35,11
+    EDITTEXT        IDC_EDIT_POBLACIONOBRA,324,75,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           " CP:",IDC_STATIC,440,77,16,11
+    EDITTEXT        IDC_EDIT_CPOBRA,460,75,49,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Intermediario",IDC_STATIC,279,95,236,73
+    LTEXT           "Representante:",IDC_STATIC,285,109,53,10
+    EDITTEXT        IDC_EDIT_REPRE,351,107,41,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CUENTAREPRE,394,107,14,13
+    EDITTEXT        IDC_EDIT_NOMREPRE,409,107,100,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Comisión:",IDC_STATIC,285,123,53,10
+    EDITTEXT        IDC_EDIT_COMISIONREPRE,351,121,41,13,ES_AUTOHSCROLL
+    LTEXT           "Subrepresentante:",IDC_STATIC,285,137,61,10
+    EDITTEXT        IDC_EDIT_SUBREPRE,351,135,41,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CUENTASUBREPRE,394,135,14,13
+    EDITTEXT        IDC_EDIT_NOMSUBREPRE,409,135,100,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Comisión:",IDC_STATIC,285,151,53,10
+    EDITTEXT        IDC_EDIT_COMISIONSUBREPRE,351,149,41,13,ES_AUTOHSCROLL
+    GROUPBOX        "Datos",IDC_STATIC,280,168,236,86
+    LTEXT           "Fecha:",IDC_STATIC_FECHA1,285,183,52,8
+    CONTROL         "",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,335,181,53,13
+    LTEXT           "Fecha caducidad:",IDC_STATIC_FECHA2,392,183,66,8
+    CONTROL         "",IDC_FECHA2,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,458,181,53,13
+    LTEXT           "Centro:",IDC_STATIC,285,201,29,8
+    EDITTEXT        IDC_EDIT_CENTRO,335,199,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTRO,360,199,14,13
+    EDITTEXT        IDC_EDIT_NOMBRECENTRO,376,199,134,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Su referencia:",IDC_STATIC,285,218,45,8
+    EDITTEXT        IDC_EDIT_REFERENCIA,335,216,175,13,ES_AUTOHSCROLL
+    LTEXT           "A la Atn:",IDC_STATIC,285,235,45,8
+    EDITTEXT        IDC_EDIT_ATN,335,232,175,13,ES_AUTOHSCROLL
+    GROUPBOX        "Artículos",IDC_STATIC,15,254,501,135
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,20,265,491,92
+    DEFPUSHBUTTON   "Buscar",ID_BUSCAR,115,362,50,14
+    DEFPUSHBUTTON   "Eliminar",ID_ELIMINAR,169,362,50,14
+    LTEXT           "Total bruto:",IDC_STATIC,349,362,39,8
+    EDITTEXT        IDC_EDIT_TOTAL_BRUTO,402,360,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Euros",IDC_STATIC,465,362,26,12
+    LTEXT           "Total peso:",IDC_STATIC,349,375,45,12
+    EDITTEXT        IDC_EDIT_TOTAL_PESO,402,373,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Kilos",IDC_STATIC,465,375,23,8
+    GROUPBOX        "",IDC_STATIC,518,34,62,45
+    PUSHBUTTON      "Datos cobro",ID_DATOS_COBRO,523,42,52,14
+    PUSHBUTTON      "Observaciones",ID_OBSERVACIONES,523,60,52,14
+    GROUPBOX        "",IDC_STATIC_EMISION,15,388,207,23
+    CONTROL         "Emitir pedido",IDC_CHECK_EMITIR1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,396,57,11
+    CONTROL         "Emitir albarán",IDC_CHECK_EMITIR2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,87,396,58,11
+    DEFPUSHBUTTON   "Nuevo",ID_NUEVO,299,396,52,14
+    PUSHBUTTON      "Buscar",ID_MODIFICAR,354,396,52,14
+    DEFPUSHBUTTON   "Guardar",IDOK,409,396,52,14
+    PUSHBUTTON      "Salir",IDCANCEL,464,396,52,14
+    EDITTEXT        IDC_EDIT_DESALMACEN,366,15,133,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "IVA:",IDC_STATIC,25,224,24,11
+    EDITTEXT        IDC_EDIT_IVA,84,222,43,13,ES_AUTOHSCROLL
+    CONTROL         "Emitir factura",IDC_CHECK_EMITIR3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,156,396,58,11
+    CONTROL         "Movimiento de almacén",IDC_CHECK_MOV_ALMACEN,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,21,365,92,
+                    8
+    GROUPBOX        "Tipo",IDC_STATIC,16,3,258,30
+    CONTROL         "Andamio",IDC_RB_ANDAMIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,49,14,43,10
+    CONTROL         "Maquinaria",IDC_RB_MAQUINARIA,"Button",
+                    BS_AUTORADIOBUTTON,123,15,60,8
+    GROUPBOX        "Cliente",IDC_STATIC_CLIENTE,16,34,258,101
+    GROUPBOX        "Almacen",IDC_STATIC_ALMACEN,279,3,235,30
+END
+
+IDD_DLG_DATOS_COBRO DIALOGEX 0, 0, 227, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Datos cobro"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Forma de pago:",IDC_STATIC,16,11,59,9
+    EDITTEXT        IDC_EDIT_FCOBRO,96,9,20,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_FCOBRO,117,9,14,13
+    EDITTEXT        IDC_EDIT_DESFCOBRO,132,9,83,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de vencimientos:",IDC_STATIC,16,25,71,9
+    EDITTEXT        IDC_EDIT_NUMCOBROS,96,23,36,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Primer vencimiento:",IDC_STATIC,16,39,68,9
+    EDITTEXT        IDC_EDIT_1VTO,96,37,36,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Días entre vencimientos:",IDC_STATIC,16,54,81,9
+    EDITTEXT        IDC_EDIT_DIAS_VTO,96,52,36,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Días pago:",IDC_STATIC,16,68,52,9
+    EDITTEXT        IDC_EDIT_DIAS_PAGO1,96,66,24,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_DIAS_PAGO2,122,66,24,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_DIAS_PAGO3,147,66,24,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Retención fiscal:",IDC_STATIC,16,82,60,9
+    EDITTEXT        IDC_EDIT_RET_FISCAL,96,80,36,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,65,101,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,118,101,50,14
+END
+
+IDD_DLG_OBSERVACIONES DIALOGEX 0, 0, 265, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Observaciones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,84,100,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,137,100,50,14
+    EDITTEXT        IDC_OBS_CLIENTE,23,62,214,20,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+    GROUPBOX        "Cliente",IDC_STATIC,14,49,235,41
+    GROUPBOX        "",IDC_GRUPO_OBS,14,7,235,41
+    EDITTEXT        IDC_OBSERVACIONES,23,20,214,20,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+END
+
+IDD_DLG_BUSCAVENTA DIALOGEX 0, 0, 355, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Modificar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,130,48,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,184,48,50,14
+    LTEXT           "Nº de Oferta:",IDC_STATIC_NUMERO,14,21,51,14
+    EDITTEXT        IDC_NUMVENTA,66,19,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_VENTA,124,19,15,13
+    EDITTEXT        IDC_CUENTA,175,19,56,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DESCUENTA,233,19,108,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cliente:",IDC_STATIC,144,21,26,11
+END
+
+IDD_DLG_ACEPTA_OFERTA DIALOGEX 0, 0, 280, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Aceptación/Denegación de Ofertas"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nº de Oferta:",IDC_STATIC,23,13,45,14
+    EDITTEXT        IDC_NUMOFERTA,75,12,60,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_OFERTA,136,12,15,13
+    LTEXT           "Estado:",IDC_STATIC,162,13,26,12
+    EDITTEXT        IDC_ESTADO,193,12,60,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Aceptar oferta",IDC_ACEPTAR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,27,60,14,WS_EX_TRANSPARENT
+    CONTROL         "Denegar oferta",IDC_DENEGAR,"Button",BS_AUTORADIOBUTTON,
+                    21,89,62,16,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,15,29,248,57
+    GROUPBOX        "",IDC_STATIC,15,93,248,40
+    LTEXT           "Fecha pedido:",IDC_STATIC_FECHA,29,46,46,13
+    CONTROL         "",IDC_FECHA_PEDIDO,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,85,45,60,13
+    LTEXT           "Motivo:",IDC_STATIC_MOTIVO,29,110,35,14
+    EDITTEXT        IDC_MOTIVO,73,107,184,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,88,141,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,141,141,50,14
+    LTEXT           "Almacén:",IDC_STATIC_ALMACEN,29,63,33,14
+    EDITTEXT        IDC_EDIT_ALMACEN,85,61,45,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,132,61,13,13
+    EDITTEXT        IDC_EDIT_DESALMACEN,146,61,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DLG_DATOS_ALBARAN DIALOGEX 0, 0, 254, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Albarán"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,75,64,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,128,64,50,14
+    LTEXT           "Fecha inicio alquiler:",IDC_STATIC,13,10,70,11
+    CONTROL         "",IDC_FECHA_INI_ALQUILER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,84,9,57,12
+    LTEXT           "Observaciones:",IDC_STATIC,13,30,56,13
+    EDITTEXT        IDC_OBSER_ALBARAN,84,30,157,22,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+END
+
+IDD_DLG_PREPARACION_ALBARAN DIALOGEX 0, 0, 178, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Preparación albaranes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,15,7,149,78
+    CONTROL         "Albarán de entrega",IDC_RBTN_ENTREGA,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,31,16,98,13
+    CONTROL         "Albarán de recogida",IDC_RBTN_RECOGIDA,"Button",
+                    BS_AUTORADIOBUTTON,31,32,99,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,38,95,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,91,95,50,14
+    CONTROL         "Despiece de albarán de entrega",
+                    IDC_RBTN_DESPIECE_ENTREGA,"Button",BS_AUTORADIOBUTTON,31,
+                    48,115,14
+    CONTROL         "Despiece de albarán de recogida",
+                    IDC_RBTN_DESPIECE_RECOGIDA,"Button",BS_AUTORADIOBUTTON,
+                    31,64,115,14
+END
+
+IDD_DLG_PRE_ALB_ENTREGA DIALOGEX 0, 0, 412, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Albarán de entrega"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,17,4,379,106
+    LTEXT           "Cliente:",IDC_STATIC,25,16,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,98,16,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,155,16,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,170,16,219,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de Pedido:",IDC_STATIC_NUMERO,25,32,51,14
+    EDITTEXT        IDC_PEDIDO,98,32,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_PEDIDO,155,32,14,13
+    LTEXT           "Almacen:",IDC_STATIC,173,34,33,11
+    EDITTEXT        IDC_ALMACEN,210,32,49,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOMBRE_ALMACEN,262,32,127,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Fecha inicio alquiler:",IDC_STATIC,25,48,70,11
+    CONTROL         "",IDC_FECHA_INI_ALQUILER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,98,48,56,13
+    LTEXT           "Observaciones:",IDC_STATIC,25,64,56,13
+    EDITTEXT        IDC_OBSER_ALBARAN,98,64,291,21,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Albaranes del pedido:",IDC_STATIC,25,88,69,14
+    EDITTEXT        IDC_ALBARANES,98,88,291,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "Artículos",IDC_STATIC,17,113,379,135
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,24,128,366,98
+    LTEXT           "Total peso:",IDC_STATIC,263,232,45,12
+    EDITTEXT        IDC_EDIT_TOTAL_PESO,309,230,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Kilos",IDC_STATIC,372,232,23,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,154,256,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,207,256,50,14
+END
+
+IDD_DLG_PRE_ALB_RECOGIDA DIALOGEX 0, 0, 422, 273
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Albarán de recogida"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,11,5,395,106
+    LTEXT           "Cliente:",IDC_STATIC,21,15,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,93,15,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,150,15,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,165,15,230,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de Pedido:",IDC_STATIC_NUMERO,21,31,51,14
+    EDITTEXT        IDC_PEDIDO,93,31,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_PEDIDO,150,31,14,13
+    LTEXT           "Almacen:",IDC_STATIC,168,31,33,11
+    EDITTEXT        IDC_ALMACEN,204,31,49,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOMBRE_ALMACEN,256,31,139,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Fecha fin alquiler:",IDC_STATIC,21,48,70,11
+    CONTROL         "",IDC_FECHA_FIN_ALQUILER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,93,48,56,13
+    LTEXT           "Observaciones:",IDC_STATIC,21,64,56,13
+    EDITTEXT        IDC_OBSER_ALBARAN,93,64,303,21,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Albaranes del pedido:",IDC_STATIC,21,88,70,14
+    EDITTEXT        IDC_ALBARANES,93,89,303,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "Artículos en alquiler",IDC_STATIC,11,114,396,131
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,21,126,375,98
+    DEFPUSHBUTTON   "Aceptar",IDOK,154,252,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,207,252,50,14
+    PUSHBUTTON      "Eliminar",ID_ELIMINAR,75,227,50,14
+    DEFPUSHBUTTON   "Buscar",ID_BUSCAR,21,227,50,14
+END
+
+IDD_DLG_OBRA DIALOGEX 0, 0, 324, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Obras"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,115,60,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,167,60,50,14
+    LTEXT           "Cliente:",IDC_STATIC,15,16,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,52,14,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,109,14,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,124,14,180,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Obra:",IDC_STATIC,15,34,29,11
+    EDITTEXT        IDC_EDIT_OBRA,51,32,56,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA,109,32,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE_OBRA,124,32,180,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DLG_CIERRE_OBRA DIALOGEX 0, 0, 428, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Cierre de obra"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Salir",IDCANCEL,183,197,50,14
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,16,21,396,154
+    GROUPBOX        "Artículos alquilados con irregularidades",IDC_STATIC,7,
+                    7,414,178
+END
+
+IDD_DLG_FACTURACION DIALOGEX 0, 0, 372, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Facturación"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Cliente inicial:",IDC_STATIC,19,16,47,11
+    EDITTEXT        IDC_EDIT_CUENTA,94,14,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,151,14,14,13
+    LTEXT           "Cliente final:",IDC_STATIC,176,16,48,11
+    EDITTEXT        IDC_EDIT_CUENTA2,249,14,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA2,306,14,14,13
+    LTEXT           "Obra incial:",IDC_STATIC,19,34,43,11
+    EDITTEXT        IDC_EDIT_OBRA,94,32,56,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA,151,32,14,13
+    LTEXT           "Obra final:",IDC_STATIC,176,34,41,11
+    EDITTEXT        IDC_EDIT_OBRA2,249,32,56,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA2,306,32,14,13
+    LTEXT           "Fecha inicial pedido:",IDC_STATIC,21,51,70,12
+    CONTROL         "",IDC_FECHA1,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,94,50,56,13
+    LTEXT           "Fecha final pedido:",IDC_STATIC,177,51,70,12
+    CONTROL         "",IDC_FECHA2,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,249,50,56,13
+    DEFPUSHBUTTON   "Aceptar",IDOK,130,74,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,184,74,50,14
+END
+
+IDD_DLG_FACPEDIDOS DIALOGEX 0, 0, 407, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Selecciona pedidos a facturar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,289,151,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,342,151,50,14
+    CONTROL         "",IDC_LIST_PEDIDOS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,15,377,128
+    CONTROL         "Seleccionar todos",IDC_CHECK_TODOS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,148,80,11
+END
+
+IDD_DLG_TIPOFAC DIALOGEX 0, 0, 170, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Tipo facturación"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,34,60,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,87,60,50,14
+    GROUPBOX        "",IDC_STATIC,10,5,149,46
+    CONTROL         "Factura por contrato",IDC_RBTN_CONTRATO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,44,14,98,13
+    CONTROL         "Factura por obra",IDC_RBTN_OBRA,"Button",
+                    BS_AUTORADIOBUTTON,44,30,99,14
+END
+
+IDD_DLG_CONTADORES DIALOGEX 0, 0, 196, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Seleccione contador"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,45,93,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,99,93,50,14
+    LISTBOX         IDC_LIST1,14,14,167,69,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_FECHASFAC DIALOGEX 0, 0, 177, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,40,61,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,92,61,50,14
+    LTEXT           "Fecha asiento:",IDC_STATIC,19,17,60,12
+    LTEXT           "Fecha fin de alquiler:",IDC_STATIC,19,35,68,14
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,99,15,55,14
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,99,33,55,15
+END
+
+IDD_DLG_FACTURA DIALOGEX 0, 0, 589, 375
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Modifica factura"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,16,4,499,26
+    LTEXT           "Nº Factura:",IDC_STATIC,58,14,43,11
+    EDITTEXT        IDC_EDIT_NUMFAC,107,13,69,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",ID_BUSCAR,178,13,14,13
+    LTEXT           "Tipo:",IDC_STATIC,222,14,29,9
+    EDITTEXT        IDC_EDIT1,245,13,69,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Pedido:",IDC_STATIC_PEDIDO,352,14,29,10
+    COMBOBOX        IDC_CMB_PEDIDOS,384,13,69,48,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Cliente",IDC_STATIC_CLIENTE,15,31,258,101
+    LTEXT           "Cliente:",IDC_STATIC,24,43,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,84,41,53,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,138,41,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,153,41,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,24,57,34,13
+    EDITTEXT        IDC_EDIT_DIRECCION,84,55,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Número:",IDC_STATIC,24,71,33,11
+    EDITTEXT        IDC_EDIT_NUMERO,84,70,60,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " Código Postal:",IDC_STATIC,152,72,48,11
+    EDITTEXT        IDC_EDIT_CP,204,70,63,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,24,86,39,11
+    EDITTEXT        IDC_EDIT_POBLACION,84,84,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC,24,100,50,11
+    EDITTEXT        IDC_EDIT_OBSERVACIONES,84,98,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Teléfono:",IDC_STATIC,24,115,41,11
+    EDITTEXT        IDC_EDIT_TELEFONO,84,113,60,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "Fax:",IDC_STATIC,158,115,25,12
+    EDITTEXT        IDC_EDIT_FAX,207,113,60,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "Datos facturación",IDC_STATIC,15,133,258,86
+    LTEXT           "Tarifa:",IDC_STATIC,25,145,24,11
+    EDITTEXT        IDC_EDIT_TARIFA,84,143,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "G. Facturación:",IDC_STATIC,148,145,52,11
+    EDITTEXT        IDC_EDIT_GFACTURACION,205,143,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dto. Comercial:",IDC_STATIC,25,160,50,11
+    EDITTEXT        IDC_EDIT_DESCUENTO1,84,158,43,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESCUENTO2,147,158,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DESCUENTO3,205,158,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "Prongo Pago:",IDC_STATIC,25,175,44,11
+    EDITTEXT        IDC_EDIT_PRONTOPAGO,84,173,43,13,ES_AUTOHSCROLL
+    LTEXT           "IVA:",IDC_STATIC,25,189,24,11
+    EDITTEXT        IDC_EDIT_IVA,84,187,43,13,ES_AUTOHSCROLL
+    LTEXT           "Riesgo concedido:",IDC_STATIC,25,203,59,11
+    EDITTEXT        IDC_EDIT_RCONCEDIDO,84,201,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Riesgo actual:",IDC_STATIC,148,203,49,11
+    EDITTEXT        IDC_EDIT_RACTUAL,205,201,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Obra",IDC_STATIC,279,31,236,61
+    LTEXT           "Obra:",IDC_STATIC,285,45,22,8
+    EDITTEXT        IDC_EDIT_OBRA,323,43,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA,349,43,14,13
+    EDITTEXT        IDC_EDIT_NOMBREOBRA,364,43,145,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,285,59,34,13
+    EDITTEXT        IDC_EDIT_DIRECCIONOBRA,324,58,185,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,285,74,35,11
+    EDITTEXT        IDC_EDIT_POBLACIONOBRA,324,72,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           " CP:",IDC_STATIC,440,74,16,11
+    EDITTEXT        IDC_EDIT_CPOBRA,460,72,49,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Intermediario",IDC_STATIC,279,92,236,73
+    LTEXT           "Representante:",IDC_STATIC,285,106,53,10
+    EDITTEXT        IDC_EDIT_REPRE,351,104,41,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CUENTAREPRE,394,104,14,13
+    EDITTEXT        IDC_EDIT_NOMREPRE,409,104,100,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Comisión:",IDC_STATIC,285,120,53,10
+    EDITTEXT        IDC_EDIT_COMISIONREPRE,351,118,41,13,ES_AUTOHSCROLL
+    LTEXT           "Subrepresentante:",IDC_STATIC,285,134,61,10
+    EDITTEXT        IDC_EDIT_SUBREPRE,351,132,41,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CUENTASUBREPRE,394,132,14,13
+    EDITTEXT        IDC_EDIT_NOMSUBREPRE,409,132,100,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Comisión:",IDC_STATIC,285,148,53,10
+    EDITTEXT        IDC_EDIT_COMISIONSUBREPRE,351,146,41,13,ES_AUTOHSCROLL
+    GROUPBOX        "Datos",IDC_STATIC,280,166,235,53
+    LTEXT           "Fecha:",IDC_STATIC_FECHA1,285,176,52,8
+    CONTROL         "",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,335,174,54,13
+    LTEXT           "Centro:",IDC_STATIC,285,190,29,8
+    EDITTEXT        IDC_EDIT_CENTRO,335,188,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTRO,360,188,14,13
+    EDITTEXT        IDC_EDIT_NOMBRECENTRO,376,188,134,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Su referencia:",IDC_STATIC,285,204,45,8
+    EDITTEXT        IDC_EDIT_REFERENCIA,335,202,175,13,ES_AUTOHSCROLL
+    GROUPBOX        "Artículos",IDC_STATIC,15,221,500,147
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,23,234,484,99
+    LTEXT           "Total bruto:",IDC_STATIC,349,339,39,8
+    EDITTEXT        IDC_EDIT_TOTAL_BRUTO,402,337,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Euros",IDC_STATIC,465,340,23,8
+    LTEXT           "Total neto:",IDC_STATIC,349,352,45,12
+    EDITTEXT        IDC_EDIT_TOTAL_NETO,402,351,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Euros",IDC_STATIC,465,353,23,8
+    GROUPBOX        "",IDC_STATIC,518,31,66,47
+    PUSHBUTTON      "Datos cobro",ID_DATOS_COBRO,524,39,52,14
+    PUSHBUTTON      "Observaciones",ID_OBSERVACIONES,524,57,52,14
+    GROUPBOX        "",IDC_STATIC,518,319,66,49
+    PUSHBUTTON      "Aceptar",ID_OK,524,330,52,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,524,348,52,14
+    EDITTEXT        IDC_EDIT_PEDIDO,384,13,69,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DLG_CALENDARIO DIALOGEX 0, 0, 235, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Calendario laboral"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Guardar",IDOK,68,186,50,14
+    PUSHBUTTON      "Salir",IDCANCEL,119,186,50,14
+    GROUPBOX        "",IDC_STATIC_CALENDARIO,14,37,204,140,WS_GROUP
+    CONTROL         "1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,24,61,
+                    26,17
+    CONTROL         "2",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,50,61,
+                    26,17
+    CONTROL         "3",IDC_BUTTON3,"Button",BS_OWNERDRAW | WS_TABSTOP,76,61,
+                    26,17
+    CONTROL         "4",IDC_BUTTON4,"Button",BS_OWNERDRAW | WS_TABSTOP,102,
+                    61,26,17
+    CONTROL         "5",IDC_BUTTON5,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    61,26,17
+    CONTROL         "6",IDC_BUTTON6,"Button",BS_OWNERDRAW | WS_TABSTOP,154,
+                    61,26,17
+    CONTROL         "7",IDC_BUTTON7,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    61,26,17
+    CONTROL         "8",IDC_BUTTON8,"Button",BS_OWNERDRAW | WS_TABSTOP,24,78,
+                    26,17
+    CONTROL         "9",IDC_BUTTON9,"Button",BS_OWNERDRAW | WS_TABSTOP,50,78,
+                    26,17
+    CONTROL         "10",IDC_BUTTON10,"Button",BS_OWNERDRAW | WS_TABSTOP,76,
+                    78,26,17
+    CONTROL         "11",IDC_BUTTON11,"Button",BS_OWNERDRAW | WS_TABSTOP,102,
+                    78,26,17
+    CONTROL         "12",IDC_BUTTON12,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    78,26,17
+    CONTROL         "13",IDC_BUTTON13,"Button",BS_OWNERDRAW | WS_TABSTOP,154,
+                    78,26,17
+    CONTROL         "14",IDC_BUTTON14,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    78,26,17
+    CONTROL         "15",IDC_BUTTON15,"Button",BS_OWNERDRAW | WS_TABSTOP,24,
+                    96,26,17
+    CONTROL         "16",IDC_BUTTON16,"Button",BS_OWNERDRAW | WS_TABSTOP,50,
+                    96,26,17
+    CONTROL         "17",IDC_BUTTON17,"Button",BS_OWNERDRAW | WS_TABSTOP,76,
+                    96,26,17
+    CONTROL         "18",IDC_BUTTON18,"Button",BS_OWNERDRAW | WS_TABSTOP,102,
+                    96,26,17
+    CONTROL         "19",IDC_BUTTON19,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    96,26,17
+    CONTROL         "20",IDC_BUTTON20,"Button",BS_OWNERDRAW | WS_TABSTOP,154,
+                    96,26,17
+    CONTROL         "21",IDC_BUTTON21,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    96,26,17
+    CONTROL         "22",IDC_BUTTON22,"Button",BS_OWNERDRAW | WS_TABSTOP,24,
+                    113,26,17
+    CONTROL         "23",IDC_BUTTON23,"Button",BS_OWNERDRAW | WS_TABSTOP,50,
+                    113,26,17
+    CONTROL         "24",IDC_BUTTON24,"Button",BS_OWNERDRAW | WS_TABSTOP,76,
+                    113,26,17
+    CONTROL         "25",IDC_BUTTON25,"Button",BS_OWNERDRAW | WS_TABSTOP,102,
+                    113,26,17
+    CONTROL         "26",IDC_BUTTON26,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    113,26,17
+    CONTROL         "27",IDC_BUTTON27,"Button",BS_OWNERDRAW | WS_TABSTOP,154,
+                    113,26,17
+    CONTROL         "28",IDC_BUTTON28,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    113,26,17
+    CONTROL         "29",IDC_BUTTON29,"Button",BS_OWNERDRAW | WS_TABSTOP,24,
+                    131,26,17
+    CONTROL         "30",IDC_BUTTON30,"Button",BS_OWNERDRAW | WS_TABSTOP,50,
+                    131,26,17
+    CONTROL         "31",IDC_BUTTON31,"Button",BS_OWNERDRAW | WS_TABSTOP,76,
+                    131,26,17
+    CONTROL         "32",IDC_BUTTON32,"Button",BS_OWNERDRAW | WS_TABSTOP,102,
+                    131,26,17
+    CONTROL         "33",IDC_BUTTON33,"Button",BS_OWNERDRAW | WS_TABSTOP,128,
+                    131,26,17
+    CONTROL         "34",IDC_BUTTON34,"Button",BS_OWNERDRAW | WS_TABSTOP,154,
+                    131,26,17
+    CONTROL         "35",IDC_BUTTON35,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    131,26,17
+    CONTROL         "36",IDC_BUTTON36,"Button",BS_OWNERDRAW | WS_TABSTOP,24,
+                    148,26,17
+    CONTROL         "37",IDC_BUTTON37,"Button",BS_OWNERDRAW | WS_TABSTOP,50,
+                    148,26,17
+    LTEXT           "Año:",IDC_STATIC,143,21,20,8
+    LTEXT           "Mes:",IDC_STATIC,23,21,19,10
+    CONTROL         "",IDC_DATE_AGNO,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    DTS_UPDOWN | WS_TABSTOP,165,18,40,13
+    COMBOBOX        IDC_CMB_MESES,45,18,75,139,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "Lun",IDC_STATIC,24,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Mar",IDC_STATIC,50,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Mié",IDC_STATIC,76,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Jue",IDC_STATIC,102,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Vie",IDC_STATIC,128,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Sáb",IDC_STATIC,154,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "Dom",IDC_STATIC,180,47,26,14,SS_CENTERIMAGE,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "",IDC_BUTTON38,76,148,26,17
+    PUSHBUTTON      "",IDC_BUTTON39,102,148,26,17
+    PUSHBUTTON      "",IDC_BUTTON40,154,148,26,17
+    PUSHBUTTON      "",IDC_BUTTON41,180,148,26,17
+    PUSHBUTTON      "",IDC_BUTTON42,128,148,26,17
+END
+
+IDD_DLG_EMITIR_INFORMES DIALOGEX 0, 0, 287, 117
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,95,96,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,147,96,50,14
+    LTEXT           "Fecha inicial:",IDC_STATIC,13,16,43,11
+    LTEXT           "Fecha final:",IDC_STATIC,147,16,39,11
+    CONTROL         "",IDC_FECHA1,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,65,14,54,13
+    CONTROL         "",IDC_FECHA2,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,199,15,54,13
+    LTEXT           "Oferta inicial:",IDC_STATIC_ELEM1,13,35,46,9
+    LTEXT           "Oferta final:",IDC_STATIC_ELEM2,147,35,43,10
+    LTEXT           "Cuenta inicial:",IDC_STATIC,13,53,47,10
+    LTEXT           "Cuenta final:",IDC_STATIC,147,53,43,12
+    LTEXT           "Centro inicial:",IDC_STATIC,13,71,50,10
+    LTEXT           "Centro final:",IDC_STATIC,147,71,42,9
+    EDITTEXT        IDC_ELEM1,65,33,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ELEM1,120,33,14,12
+    EDITTEXT        IDC_ELEM2,199,33,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ELEM2,254,33,14,12
+    EDITTEXT        IDC_CUENTA1,65,51,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTAS1,120,51,14,12
+    EDITTEXT        IDC_CUENTA2,199,51,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTAS2,254,51,14,12
+    EDITTEXT        IDC_CENTRO1,65,69,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTROS1,120,69,14,12
+    EDITTEXT        IDC_CENTRO2,199,69,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CENTROS2,254,69,14,12
+END
+
+IDD_DLG_FACTURANDO DIALOGEX 0, 0, 216, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Facturación"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Iniciar",IDC_BTN_INICIAR,59,148,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,113,148,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER | 0x1,17,
+                    105,181,13
+    LTEXT           "Facturando pedido ",IDC_STATIC_PEDIDO,27,92,114,12
+    LTEXT           "Creando facturas...",IDC_STATIC_FACTURAS,27,122,172,8
+    GROUPBOX        "Evolución de la facturación",IDC_STATIC,7,79,202,60
+    GROUPBOX        "Datos facturación",IDC_STATIC,7,7,201,71
+    LTEXT           "Número de pedidos: ",IDC_STATIC_NUMPEDIDOS,19,21,69,11
+    LTEXT           "Fecha fin de alquiler:",IDC_STATIC_FECHA,19,34,74,11
+    LTEXT           "Tipo de factura:",IDC_STATIC_TIPO,19,47,65,9
+    LTEXT           "Contador:",IDC_STATIC_CONTADOR,19,60,56,10
+    LTEXT           "",IDC_NUMPEDIDO,95,21,56,8
+    LTEXT           "",IDC_FECHA,95,34,56,8
+    LTEXT           "",IDC_TIPO,95,47,56,8
+    LTEXT           "",IDC_CONTADOR,95,60,56,8
+END
+
+IDD_DLG_OPCIONES_FACTURACION DIALOGEX 0, 0, 186, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Opciones facturación"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,42,146,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,96,146,50,14
+    CONTROL         "Factura por contrato",IDC_RBTN_CONTRATO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,24,68,78,13
+    CONTROL         "Factura por obra",IDC_RBTN_OBRA,"Button",
+                    BS_AUTORADIOBUTTON,24,81,82,14
+    GROUPBOX        "Tipo de factura",IDC_STATIC,11,55,162,47
+    GROUPBOX        "Tipo de contador",IDC_STATIC,11,103,162,37
+    COMBOBOX        IDC_CMB_CONTADOR,43,118,99,34,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Fecha asiento:",IDC_STATIC,24,19,60,12
+    LTEXT           "Fecha fin de alquiler:",IDC_STATIC,24,35,68,14
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,105,17,55,14
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,105,33,55,15
+    GROUPBOX        "Fechas",IDC_STATIC,11,7,162,47
+END
+
+IDD_DLG_PRE_ALB_DESPIECE_ENTREGA DIALOGEX 0, 0, 441, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Despiece de albarán de entrega"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,17,3,408,96
+    LTEXT           "Cliente:",IDC_STATIC,26,14,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,99,12,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,156,12,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,171,13,245,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de Pedido:",IDC_STATIC_NUMERO,26,33,51,14
+    EDITTEXT        IDC_PEDIDO,99,31,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_PEDIDO,156,31,14,13
+    LTEXT           "Almacen:",IDC_STATIC,175,33,35,11
+    EDITTEXT        IDC_ALMACEN,212,31,49,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOMBRE_ALMACEN,264,31,151,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Fecha inicio alquiler:",IDC_STATIC,26,51,70,11
+    CONTROL         "",IDC_FECHA_INI_ALQUILER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,99,49,56,12
+    LTEXT           "Observaciones:",IDC_STATIC,26,70,56,13
+    EDITTEXT        IDC_OBSER_ALBARAN,99,67,318,22,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    GROUPBOX        "Artículos",IDC_STATIC,17,103,408,135
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,24,117,393,98
+    DEFPUSHBUTTON   "Buscar",ID_BUSCAR,24,218,50,14
+    DEFPUSHBUTTON   "Eliminar",ID_ELIMINAR,77,218,50,14
+    LTEXT           "Total peso:",IDC_STATIC,293,222,45,12
+    EDITTEXT        IDC_EDIT_TOTAL_PESO,339,220,59,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Kilos",IDC_STATIC,403,222,16,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,323,244,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,375,244,50,14
+END
+
+IDD_DLG_ALBARAN DIALOGEX 0, 0, 556, 253
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,360,232,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,499,232,50,14
+    GROUPBOX        "Cliente",IDC_STATIC_CLIENTE,11,7,258,113
+    LTEXT           "Cliente:",IDC_STATIC,20,19,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,80,17,53,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,134,17,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,149,17,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,20,33,34,13
+    EDITTEXT        IDC_EDIT_DIRECCION,80,31,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Número:",IDC_STATIC,20,47,33,11
+    EDITTEXT        IDC_EDIT_NUMERO,80,46,60,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           " Código Postal:",IDC_STATIC,148,48,48,11
+    EDITTEXT        IDC_EDIT_CP,200,46,63,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,20,62,39,11
+    EDITTEXT        IDC_EDIT_POBLACION,80,60,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observaciones:",IDC_STATIC,20,76,50,11
+    EDITTEXT        IDC_EDIT_OBSERVACIONES,80,74,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Teléfono:",IDC_STATIC,20,105,41,11
+    EDITTEXT        IDC_EDIT_TELEFONO,80,103,60,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Fax:",IDC_STATIC,154,105,25,12
+    EDITTEXT        IDC_EDIT_FAX,203,103,60,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Obra",IDC_STATIC,274,7,236,61
+    LTEXT           "Obra:",IDC_STATIC,280,22,22,8
+    EDITTEXT        IDC_EDIT_OBRA,318,20,24,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_OBRA,344,20,14,13
+    EDITTEXT        IDC_EDIT_NOMBREOBRA,359,20,145,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Dirección:",IDC_STATIC,280,36,34,13
+    EDITTEXT        IDC_EDIT_DIRECCIONOBRA,319,34,185,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Población:",IDC_STATIC,280,50,35,11
+    EDITTEXT        IDC_EDIT_POBLACIONOBRA,319,49,114,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           " CP:",IDC_STATIC,435,50,16,11
+    EDITTEXT        IDC_EDIT_CPOBRA,455,49,49,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Contacto:",IDC_STATIC,20,91,50,11
+    EDITTEXT        IDC_EDIT_OBSERVACIONES2,80,88,183,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC_GRUPO,11,120,151,30
+    EDITTEXT        IDC_EDIT_ALMACEN,19,131,44,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_ALMACEN,64,131,14,13
+    EDITTEXT        IDC_EDIT_ESTADO,79,131,69,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Tipo",IDC_STATIC_TIPO,165,120,103,30
+    CONTROL         "Nacional",IDC_RB_NACIONAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,170,133,43,10
+    CONTROL         "Exportación",IDC_RB_EXPORTACION,"Button",
+                    BS_AUTORADIOBUTTON,214,133,51,10
+END
+
+IDD_DLG_PRE_ALB_DESPIECE_RECOGIDA DIALOGEX 0, 0, 440, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Despiece de albarán de recogida"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,11,6,413,108
+    LTEXT           "Cliente:",IDC_STATIC,22,21,29,11
+    EDITTEXT        IDC_EDIT_CUENTA,110,19,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_CUENTA,167,19,14,13
+    EDITTEXT        IDC_EDIT_NOMBRE,182,19,234,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de pedido:",IDC_STATIC_NUMERO,22,37,51,14
+    EDITTEXT        IDC_PEDIDO,110,35,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_PEDIDO,167,35,14,13
+    LTEXT           "Almacen:",IDC_STATIC,189,37,35,11
+    EDITTEXT        IDC_ALMACEN,226,35,49,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOMBRE_ALMACEN,278,35,138,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Nº de albarán de entrega:",IDC_STATIC_NUMERO2,22,53,85,
+                    14
+    EDITTEXT        IDC_ALBARAN,110,51,56,13,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "...",IDC_BTN_ALBARAN,167,51,14,13
+    LTEXT           "Fecha fin alquiler:",IDC_STATIC,22,69,70,11
+    CONTROL         "",IDC_FECHA_FIN_ALQUILER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,110,67,56,12
+    LTEXT           "Observaciones:",IDC_STATIC,22,85,56,13
+    EDITTEXT        IDC_OBSER_ALBARAN,110,83,305,22,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    GROUPBOX        "Artículos",IDC_STATIC,11,118,414,135
+    CONTROL         "",IDC_LIST_ARTICULOS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,21,132,394,98
+    DEFPUSHBUTTON   "Buscar",ID_BUSCAR,21,233,50,14
+    DEFPUSHBUTTON   "Eliminar",ID_ELIMINAR,74,233,50,14
+    DEFPUSHBUTTON   "Aceptar",IDOK,323,257,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,375,257,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_VENTAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 580
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 411
+    END
+
+    IDD_DLG_DATOS_COBRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DLG_OBSERVACIONES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DLG_BUSCAVENTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DLG_ACEPTA_OFERTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DLG_DATOS_ALBARAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DLG_PREPARACION_ALBARAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DLG_PRE_ALB_ENTREGA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DLG_PRE_ALB_RECOGIDA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_DLG_OBRA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DLG_CIERRE_OBRA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DLG_FACTURACION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DLG_FACPEDIDOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DLG_TIPOFAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DLG_CONTADORES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DLG_FECHASFAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DLG_FACTURA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 584
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 368
+    END
+
+    IDD_DLG_CALENDARIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DLG_EMITIR_INFORMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_DLG_FACTURANDO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DLG_OPCIONES_FACTURACION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DLG_PRE_ALB_DESPIECE_ENTREGA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_DLG_ALBARAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 549
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DLG_PRE_ALB_DESPIECE_RECOGIDA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_ERROR_BD            "Error de Base de Datos"
+    IDC_NO_NUMBER           "Debe escribir un número"
+    IDC_CLIENTE_NO_EXISTS   "El cliente no existe"
+    IDC_OFERTA_NO_EXISTS    "La oferta no existe"
+    IDC_NO_CLIENTE          "Debe seleccionar un cliente"
+    IDC_CUENTA_NO_EXISTS    "La cuenta no existe"
+    IDC_OBRA_NO_EXISTS      "La obra no existe"
+    IDC_TELEFONO_LARGO      "No debe sobrepasar los 10 caracteres"
+    IDC_CENTRO_NO_EXISTS    "El centro no existe"
+    IDC_YA_DENEGADA         "La oferta ya ha sido denegada"
+    IDS_ARTI_YA_EN_LISTA    "El artículo ya está en la lista"
+    IDC_YA_ACEPTADA         "La oferta ya ha sido aceptada"
+    IDS_ARTI_NO_EXISTS      "El código de artículo no existe"
+    IDC_DENEGADA            "La oferta ha sido denegada, no se puede aceptar"
+    IDC_PEDIDO_NO_EXISTS    "El pedido no existe"
+    IDC_ACEPTADA            "La oferta ha sido aceptada, no se puede denegar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FCOBRO_NO_EXISTS    "La forma de cobro no existe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_ALMACEN_NO_EXISTS   "El almacén no existe"
+    IDC_ALMACEN_NO_VALIDO   "La cuenta no es de un almacén"
+    IDC_NO_OFERTA           "Debe seleccionar una oferta"
+    IDC_NO_ALMACEN          "Debe seleccionar un almacén"
+    IDC_NO_DISPONIBLE       "En el almacén ""%s"" hay disponibles %d artículos"
+    IDC_NO_PEDIDO           "Debe seleccionar un pedido"
+    IDC_ALBARAN_NO_EXISTS   "El albarán no existe"
+    IDC_NO_ALBARAN          "Debe seleccionar un albarán"
+    IDC_CREADA_OFERTA       "Creada oferta número: %s"
+    IDC_CREADO_PEDIDO       "Creado pedido número: %s"
+    IDC_CREADO_ALBARAN      "Creado albarán número: %s"
+    IDC_ALBARAN_NO_CREADO   "No se pudo realizar la operación por la no disponibilidad de artículos"
+    IDC_DESCRIPCION_LARGA   "La descripción no debe superar los 100 caracteres"
+    IDC_PEDIDOALBARAN       "Número pedido: %s  /  Número albarán: %s"
+    IDC_ALBARANPED_NO_CREADO 
+                            "Número pedido: %s / No se pudo crear el albarán por la no disponibilidad de artículos"
+    IDC_ALBARANPED_ELIMINADO 
+                            "Modificado pedido: %s / Eliminado albarán %s por la no disponibilidad de artículos"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_NO_ENVIO            "No se pueden enviar más unidades que las pedidas"
+    IDC_ALBARANESPED_ELIMINADOS 
+                            "Modificado pedido: %s / Eliminados albaranes:%s"
+    IDS_CERRAR_OBRA         "¿Está seguro que desea cerrar la obra?"
+    IDC_TITULO_ALTAMOD      "Alta/Modificación obra"
+    IDC_TITULO_CIERRE       "Cierre de obra"
+    IDC_TITULO_CONSULTA     "Consulta pedidos obra"
+    IDC_CREADA_FACTURA      "Creada factura número: %s"
+    IDC_FACTURA_NO_EXISTS   "La factura no existe"
+    IDC_PEDIDOS             "Facturando pedido %d / %d"
+    IDC_FACTURA             "Creada factura %s"
+    IDC_FACTURAS            "Creada facturas de la %s a la %s"
+    IDC_PEDIDOALBARANFACTURA 
+                            "Número pedido: %s / Número albarán: %s / Número factura: %s"
+END
+
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\Ventas.rc2"  // Recursos editados que no son de Microsoft Visual C++#include "afxres.rc"     // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

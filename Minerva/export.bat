@@ -1,0 +1,1 @@
+copy .\Release\Minerva.exe \MinervaApp\Bin\Minerva.exe

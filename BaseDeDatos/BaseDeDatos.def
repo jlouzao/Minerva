@@ -1,0 +1,6 @@
+; BaseDeDatos.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "BaseDeDatos"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas

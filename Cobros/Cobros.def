@@ -1,0 +1,6 @@
+; Cobros.def: declara los parámetros de módulo del archivo DLL.
+
+LIBRARY      "Cobros"
+
+EXPORTS
+    ; Colocar aquí las exportaciones explícitas
